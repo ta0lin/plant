@@ -1,0 +1,13 @@
+.history
+.vscode
+*.log
+*.log.*
+build
+node_modules
+.DS_Store
+.idea
+.scannerwork
+/nbproject/private/
+bin
+v8-compile-cache-0
+/.vs

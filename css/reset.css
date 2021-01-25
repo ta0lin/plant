@@ -1,0 +1,141 @@
+/* CSS Document */
+body,
+dd,
+div,
+dl,
+dt,
+em,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+td,
+textarea,
+th,
+tr,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fff !important;
+    background-image: none;
+    font: 14px/150% 微软雅黑, microsoft yahei, Verdana, Lucida, arial, sans-serif;
+    position: relative;
+    display: block;
+    min-width: 1024px;
+    zoom: 1;
+    /* padding-top: 1px; */
+    overflow: hidden
+}
+
+a,
+body {
+    color: #333
+}
+
+a {
+    vertical-align: baseline;
+    cursor: pointer
+}
+
+a,
+a:hover {
+    text-decoration: none
+}
+
+a:hover {
+    color: #1e7dd7
+}
+
+input,
+textarea {
+    font-family: 微软雅黑, microsoft yahei;
+    font-size: 12px;
+    padding: 2px;
+    vertical-align: middle;
+    outline: none;
+    border-radius: 0
+}
+
+textarea {
+    line-height: 18px;
+    overflow: hidden;
+    overflow-y: auto;
+    resize: none
+}
+
+select {
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+:focus {
+    outline: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+img {
+    vertical-align: middle
+}
+
+caption,
+th {
+    text-align: left
+}
+
+iframe {
+    vertical-align: middle
+}
+
+.fix {
+    display: block;
+    zoom: 1
+}
+
+.fix:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both
+}
+
+.animation {
+    transition: all .5s linear 0s;
+    -webkit-transition: all .5s linear 0s;
+    -ms-transition: all .5s linear 0s;
+    -moz-transition: all .5s linear 0s;
+}
+
+embed {
+    display: none;
+}
