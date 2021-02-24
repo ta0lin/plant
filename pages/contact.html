@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+<script>
+    document.write('<link rel="stylesheet" href="../css/common.css?' + new Date().getTime() + '">')
+    document.write('<link rel="stylesheet" href="../css/contact.css?' + new Date().getTime() + '">')
+</script>
+<body>
+<div class="contact-container">
+    <!--导航-->
+    <div class="page-nav">
+        <div class="nav">
+            <div class="web-l">
+                <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+            </div>
+            <ul class="web-r">
+                <li><a href="visit.html">参观导览</a></li>
+                <li><a href="introduction.html">虚拟标本馆</a></li>
+                <li><a href="newsDetail.html">新闻资讯</a></li>
+                <li><a href="collections.html">馆藏标本</a></li>
+                <li><a href="volunteer.html">志愿团队</a></li>
+                <li><a href="">捐赠鸣谢</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--首页头背景图-->
+    <div class="contact-header">
+        <img src="../images/contact/contactbg.png">
+    </div>
+    <div class="web-center contact-block">
+        <div class="web-center-title">
+            <h3>
+                <span>联系</span>我们
+            </h3>
+            <span class="shu">/</span>
+        </div>
+        <div id="container"></div>
+        <div class="container-type">
+            <div class="type-item">
+                <img src="../images/contact/phone.png" alt="">
+                <p>联系电话</p>
+                <span>电话：010-62772254</span>
+            </div>
+            <div class="type-item">
+                <img src="../images/contact/address.png" alt="">
+                <p>场馆地址</p>
+                <span>地址：北京市海淀区清华大学生命学院实验教学中心内</span>
+            </div>
+            <div class="type-item">
+                <img src="../images/contact/email.png" alt="">
+                <p>场馆又想</p>
+                <span>邮箱：news@qinghua.edu.cn</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>网站地图</div>
+        <div>关于我们</div>
+        <div>捐赠鸣谢</div>
+        <div>
+            清华大学新闻中心版权所有，清华大学新闻网编辑部维护，电子信箱：news@qinghua.edu.cn
+        </div>
+        <div>
+            Copyright 2001-2020 news@qinghua.edu.cn.All rights reserved
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/common.js"></script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=您申请的key值"></script>
+<script type="text/javascript">
+    header(711, 1920);
+    $(window).resize(function () {
+        header(711, 1920);
+    });
+    // 创建地图实例
+    var map = new AMap.Map("container", {
+        zoom: 15,
+        center: [116.326836, 40.00366],
+        resizeEnable: true
+    });
+
+    // 以 icon URL 的形式创建一个途经点
+    var viaMarker = new AMap.Marker({
+        position: new AMap.LngLat(116.326836, 40.00366),
+        // 将一张图片的地址设置为 icon
+        icon: '//a.amap.com/jsapi_demos/static/demo-center/icons/dir-via-marker.png',
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-13, -30)
+    });
+
+    // 创建一个 Icon
+    var startIcon = new AMap.Icon({
+        // 图标尺寸
+        size: new AMap.Size(25, 34),
+        // 图标的取图地址
+        image: '//a.amap.com/jsapi_demos/static/demo-center/icons/dir-marker.png',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标取图偏移量
+        imageOffset: new AMap.Pixel(-9, -3)
+    });
+    // 将 icon 传入 marker
+    var startMarker = new AMap.Marker({
+        position: new AMap.LngLat(116.326836, 40.00366),
+        icon: startIcon,
+        offset: new AMap.Pixel(-13, -30)
+    });
+
+
+    // 将 markers 添加到地图
+    map.add([startMarker]);
+</script>
+</html>

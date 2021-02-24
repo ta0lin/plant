@@ -1,0 +1,230 @@
+.collections-container{
+    width:100%;
+    height:auto;
+    background: #ECECEC;
+}
+.collections-header img{
+    width:100%;
+    height:100%;
+    display: block;
+}
+.collections-title{
+    padding-bottom: 24px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E5E3E2;
+}
+.collections-block{
+    margin:23px auto 0;
+    height:auto;
+    background: #fff;
+    padding:40px 47px;
+    box-sizing: border-box;
+    position: relative;
+}
+.content-detail{
+    width: 100%;
+    height:450px;
+}
+.detail-l{
+    width: 505px;
+    height:381px;
+    background: #f4f4f4;
+    float:left;
+}
+.detail-l img{
+    width: 100%;
+    height: 100%;
+    margin: 20px 0 0 20px;
+}
+.detail-r{
+    margin: 0 0 0 535px;
+    height:381px;
+    background: rgb(103,114,160);
+    padding:35px 25px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+.detail-r-title{
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    line-height: 25px;
+}
+.detail-r-content{
+    margin-top: 25px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 24px;
+}
+.detail-bg{
+    width: 100%;
+    height:609px;
+    background-image: url(../images/collections/guancangbiaoben-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.bg-left{
+    width:393px;
+    height:auto;
+    float: left;
+    margin-top: 87px;
+}
+.bg-center{
+    margin:0 330px 0 393px;
+}
+.bg-right{
+    width:330px;
+    float: right;
+    margin-top: 42px;
+    height:496px;
+    position: relative;
+}
+.bg-l{
+    float: left;
+    width: 50%;
+}
+.left-title{
+    font-size: 36px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    line-height: 50px;
+    color: #5F2376;
+}
+.left-pic{
+    margin-top: 67px;
+}
+.left-pic img{
+    width: 363px;
+    height: 264px;
+}
+.center-title{
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    line-height: 25px;
+    color: #1F2122;
+    margin-top: 219px;
+}
+.center-content{
+    margin-top: 25px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 24px;
+    color: #313131;
+}
+.right-top{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%);
+    cursor:pointer;
+}
+.right-bottom{
+    cursor:pointer;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translate(-50%);
+}
+.right-dashed{
+    width: 1px;
+    height:414px;
+    border-left:1px dashed #707070;
+    position: absolute;
+    top:41px;
+    left:50%;
+    transform: translate(-50%);
+}
+.right-ball-one{
+    cursor:pointer;
+    position: absolute;
+    top:76px;
+    left:155px;
+}
+.right-ball-two{
+    cursor:pointer;
+    position: absolute;
+    top:170px;
+    left:30px;
+}
+.right-ball-three{
+    cursor:pointer;
+    position: absolute;
+    top:233px;
+    left:155px;
+}
+.right-ball-four{
+    cursor:pointer;
+    position: absolute;
+    top:356px;
+    left:30px;
+}
+.right-2009{
+    color: #fff;
+    position: absolute;
+    top:379px;
+    left:45px;
+    cursor:pointer;
+}
+.right-2010{
+    cursor:pointer;
+    color: #fff;
+    position: absolute;
+    top:255px;
+    left:245px;
+}
+.right-2011{
+    cursor:pointer;
+    color: #fff;
+    position: absolute;
+    top:193px;
+    left:45px;
+}
+.right-2012{
+    cursor:pointer;
+    color: #fff;
+    position: absolute;
+    top:98px;
+    left:245px;
+}
+.right-eagle{
+    cursor:pointer;
+    position: absolute;
+    left:1190px;
+    top:817px;
+    z-index: 2;
+}
+.l-pic2 , .l-pic3{
+    margin-top: 11px;
+    float: left;
+}
+.l-pic3{
+    margin-left: 16px;
+}
+.l-pic1 img , .l-pic2 img , .l-pic3 img , .l-pic5 img{
+    width: 100%;
+    height:100%
+}
+.l-title{
+    margin-top: 23px;
+}
+.l-content{
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #222222;
+}
+.l-pic5{
+    margin-top: 11px;
+}
+.l-pic4::after{
+    display: block;
+    content: '';
+    height:0;
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
+}
