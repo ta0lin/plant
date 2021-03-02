@@ -96,7 +96,6 @@
     background-image: url("../images/footerbg.png");
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 50px;
     position: relative;
 }
 .footer div{
@@ -384,6 +383,9 @@
     .sample-container{
         height: 638px;
     }
+    .news-pic-right{
+        right:-50px;
+    }
 }
 
 /*	pc 端 1280 以上的屏幕	*/
@@ -616,5 +618,8 @@
     }
     .sample-container{
         height: 780px;
+    }
+    .news-pic-right{
+        right:-70px;
     }
 }

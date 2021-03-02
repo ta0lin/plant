@@ -76,35 +76,24 @@
                 <div class="detail-bg">
                     <div class="bg-left">
                         <div class="left-title">
-                            2009年
+                            2009
                         </div>
                         <div class="left-pic">
                             <img src="../images/volunteer/v1.png" alt="">
                         </div>
                     </div>
-                    <div class="bg-right">
-                        <img src="../images/collections/top.png" alt="" class="right-top">
-                        <div class="right-dashed"></div>
-                        <img src="../images/collections/bottom.png" alt="" class="right-bottom">
-                        <img src="../images/collections/ball-right.png" alt="" class="right-ball-one">
-                        <span class="right-2012">2012</span>
-                        <img src="../images/collections/ball-left.png" alt="" class="right-ball-two">
-                        <span class="right-2011">2011</span>
-                        <img src="../images/collections/ball-right.png" alt="" class="right-ball-three">
-                        <span class="right-2010">2010</span>
-                        <img src="../images/collections/ball-active.png" alt="" class="right-ball-four">
-                        <span class="right-2009">2009</span>
+                    <div class="bg-right" id="bg-right">
                     </div>
                     <div class="bg-center">
                         <div class="center-title">
                             2009年9月28日，标本馆正式开馆
                         </div>
                         <div class="center-content">
-                            2009年9月28日，清华大学生命科学学院正式成立，标本馆亦于当天正式
+                            "2009年9月28日，清华大学生命科学学院正式成立，标本馆亦于当天正式
                             开馆。全国政协副主席王志珍院士、清华大学前校长王大中院士、清华大
                             学生命科学学院院长施一公教授等领导嘉宾为标本馆开馆剪彩。自此，具
                             备贝类、海洋生物、爬行生物、鸟类、哺乳动物等五大常设展区和植物收
-                            藏展室的标本馆正式向开放。
+                            藏展室的标本馆正式向开放。"
                         </div>
                     </div>
                 </div>
@@ -154,22 +143,123 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div>网站地图</div>
-        <div>关于我们</div>
-        <div>捐赠鸣谢</div>
-        <div>
-            清华大学新闻中心版权所有，清华大学新闻网编辑部维护，电子信箱：news@qinghua.edu.cn
-        </div>
-        <div>
-            Copyright 2001-2020 news@qinghua.edu.cn.All rights reserved
-        </div>
+</div>
+<div class="footer">
+    <div>网站地图</div>
+    <div>关于我们</div>
+    <div>捐赠鸣谢</div>
+    <div>
+        清华大学新闻中心版权所有，清华大学新闻网编辑部维护，电子信箱：news@qinghua.edu.cn
+    </div>
+    <div>
+        Copyright 2001-2020 news@qinghua.edu.cn.All rights reserved
     </div>
 </div>
 </body>
 <script src="../js/jquery-1.10.1.min.js"></script>
 <script src="../js/common.js"></script>
+<script src="../js/timeAxis_new.js"></script>
 <script>
+    function timeline(){
+        var oTimeAxiosFun = null;
+        var arr = [
+            {
+                time:2009,
+                title:'2009年9月28日，标本馆正式开馆',
+                text:'2009年9月28日，清华大学生命科学学院正式成立，标本馆亦于当天正式\n' +
+                    '                            开馆。全国政协副主席王志珍院士、清华大学前校长王大中院士、清华大\n' +
+                    '                            学生命科学学院院长施一公教授等领导嘉宾为标本馆开馆剪彩。自此，具\n' +
+                    '                            备贝类、海洋生物、爬行生物、鸟类、哺乳动物等五大常设展区和植物收\n' +
+                    '                            藏展室的标本馆正式向开放。',
+                pic:'../images/volunteer/v1.png'
+            },
+            {
+                time:2010,
+                title:'2010年9月28日，标本馆正式开馆',
+                text:'2010年9月28日，清华大学生命科学学院正式成立，标本馆亦于当天正式\n' +
+                    '                            开馆。全国政协副主席王志珍院士、清华大学前校长王大中院士、清华大\n' +
+                    '                            学生命科学学院院长施一公教授等领导嘉宾为标本馆开馆剪彩。自此，具\n' +
+                    '                            备贝类、海洋生物、爬行生物、鸟类、哺乳动物等五大常设展区和植物收\n' +
+                    '                            藏展室的标本馆正式向开放。',
+                pic:'../images/volunteer/v2.png'
+            },
+            {
+                time:2011,
+                title:'2011年9月28日，标本馆正式开馆',
+                text:'2011年9月28日，清华大学生命科学学院正式成立，标本馆亦于当天正式\n' +
+                    '                            开馆。全国政协副主席王志珍院士、清华大学前校长王大中院士、清华大\n' +
+                    '                            学生命科学学院院长施一公教授等领导嘉宾为标本馆开馆剪彩。自此，具\n' +
+                    '                            备贝类、海洋生物、爬行生物、鸟类、哺乳动物等五大常设展区和植物收\n' +
+                    '                            藏展室的标本馆正式向开放。',
+                pic:'../images/volunteer/v3.png'
+            },
+            {
+                time:2012,
+                title:'2012年9月28日，标本馆正式开馆',
+                text:'2012年9月28日，清华大学生命科学学院正式成立，标本馆亦于当天正式\n' +
+                    '                            开馆。全国政协副主席王志珍院士、清华大学前校长王大中院士、清华大\n' +
+                    '                            学生命科学学院院长施一公教授等领导嘉宾为标本馆开馆剪彩。自此，具\n' +
+                    '                            备贝类、海洋生物、爬行生物、鸟类、哺乳动物等五大常设展区和植物收\n' +
+                    '                            藏展室的标本馆正式向开放。',
+                pic:'../images/volunteer/v4.png'
+            },
+            {
+                time:2013,
+                title:'2013年9月28日，标本馆正式开馆',
+                text:'2013年9月28日，清华大学生命科学学院正式成立，标本馆亦于当天正式\n' +
+                    '                            开馆。全国政协副主席王志珍院士、清华大学前校长王大中院士、清华大\n' +
+                    '                            学生命科学学院院长施一公教授等领导嘉宾为标本馆开馆剪彩。自此，具\n' +
+                    '                            备贝类、海洋生物、爬行生物、鸟类、哺乳动物等五大常设展区和植物收\n' +
+                    '                            藏展室的标本馆正式向开放。',
+                pic:'../images/volunteer/v1.png'
+            },
+            {
+                time:2014,
+                title:'2014年9月28日，标本馆正式开馆',
+                text:'2014年9月28日，清华大学生命科学学院正式成立，标本馆亦于当天正式\n' +
+                    '                            开馆。全国政协副主席王志珍院士、清华大学前校长王大中院士、清华大\n' +
+                    '                            学生命科学学院院长施一公教授等领导嘉宾为标本馆开馆剪彩。自此，具\n' +
+                    '                            备贝类、海洋生物、爬行生物、鸟类、哺乳动物等五大常设展区和植物收\n' +
+                    '                            藏展室的标本馆正式向开放。',
+                pic:'../images/volunteer/v2.png'
+            },
+            {
+                time:2015,
+                title:'2015年9月28日，标本馆正式开馆',
+                text:'2015年9月28日，清华大学生命科学学院正式成立，标本馆亦于当天正式\n' +
+                    '                            开馆。全国政协副主席王志珍院士、清华大学前校长王大中院士、清华大\n' +
+                    '                            学生命科学学院院长施一公教授等领导嘉宾为标本馆开馆剪彩。自此，具\n' +
+                    '                            备贝类、海洋生物、爬行生物、鸟类、哺乳动物等五大常设展区和植物收\n' +
+                    '                            藏展室的标本馆正式向开放。',
+                pic:'../images/volunteer/v3.png'
+            },
+            {
+                time:2016,
+                title:'2016年9月28日，标本馆正式开馆',
+                text:'2016年9月28日，清华大学生命科学学院正式成立，标本馆亦于当天正式\n' +
+                    '                            开馆。全国政协副主席王志珍院士、清华大学前校长王大中院士、清华大\n' +
+                    '                            学生命科学学院院长施一公教授等领导嘉宾为标本馆开馆剪彩。自此，具\n' +
+                    '                            备贝类、海洋生物、爬行生物、鸟类、哺乳动物等五大常设展区和植物收\n' +
+                    '                            藏展室的标本馆正式向开放。',
+                pic:'../images/volunteer/v4.png'
+            },
+        ];
+        var param = {
+            data: arr,
+            id: 'bg-right',
+            height: '120px',
+            index: 0,
+            then: function(data) {
+                console.log(data);
+                $(".left-title").text(data.time);
+                $(".left-pic img").attr('src',data.pic);
+                $(".center-title").text(data.title);
+                $(".center-content").text(data.text)
+            }
+        }
+        oTimeAxiosFun = new oTimeAxios(param);
+    }
+    timeline();
     header(690,1920);
     $(window).resize(function () {
         header(690,1920);

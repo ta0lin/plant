@@ -2,8 +2,10 @@
     width:100%;
     position:relative;
     z-index: 1;
-    background-image: url('../images/introduction/bg.png');
     height:auto;
+    background: #ececec;
+    box-sizing: border-box;
+    padding-bottom: 50px;
 }
 .volunteer-header{
     position: absolute;

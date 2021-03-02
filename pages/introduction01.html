@@ -18,7 +18,8 @@
     <div class="page-nav pagebg">
         <div class="nav">
             <div class="web-l">
-                <a href="../index.html"> <img src="../images/logo.png" alt=""></a>
+                <a href="../index.html"><img src="../images/logo.png" alt="" class="w" style="display: none"></a>
+                <a href="../index.html"><img src="../images/biaoti.png" alt="" class="b"></a>
             </div>
             <ul class="web-r">
                 <li><a href="visit.html">参观导览</a></li>
@@ -40,8 +41,8 @@
                     <div class="right-search">
                         <div class="search-block">
                             <input type="text" id="input">
-                            <button >
-                                <img src="../images/introduction/search.png" alt="" onclick="selectFlower">
+                            <button onclick="selectFlower()">
+                                <img src="../images/introduction/search.png" alt="" >
                             </button>
                         </div>
                     </div>
@@ -87,6 +88,7 @@
         size:10
     }
     var types='';
+    var contentType='';
     chooseType();
     function chooseType(){
         if (type == 1){
@@ -97,38 +99,46 @@
             types='get';
             $(".left-title").text("花展区");
             $(".intro-detail-content-title span").text('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+
+            contentType='application/x-www-form-urlencoded;charset=UTF-8'
         }
         else if(type == 2){
             url = '/libraryMainSpecimen/queryPageListCondition';
             data.species = classify;
             types='post';
             data=JSON.stringify(data);
-            $(".right-search").hide()
+            $(".right-search").hide();
+            contentType='application/json;charset=utf-8'
+
         }
     }
     var params = {
         url:url,
         data:data,
         type:types,
-        contentType:'application/json;charset=utf-8',
+        contentType:contentType,
         callback:selectAnimalList,
         async:true
     }
     function selectFlower(){
-        console.log(4444);
-        // chooseType();
-        // data.name=$("#input").val();
-        // ajax(params)
+        chooseType();
+        console.log($("#input").val());
+        data.name=$("#input").val();
+        ajax(params)
     }
     ajax(params);
     $(document).scroll(function () {
         var scroHeight = $(document).scrollTop();  //滚动高度
         if (scroHeight > 56) {
-            $(".page-nav").css('background','#5F2376');
+            $(".page-nav").css('background', '#5F2376');
             $(".page-nav").removeClass('pagebg');
+            $(".w").show();
+            $(".b").hide();
         } else {
-            $(".page-nav").css('background','transparent');
+            $(".page-nav").css('background', '#fff');
             $(".page-nav").addClass('pagebg');
+            $(".w").hide();
+            $(".b").show();
         }
     })
 </script>

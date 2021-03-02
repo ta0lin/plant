@@ -1,9 +1,9 @@
 .intro-container{
     width:100%;
     height:auto;
-    background-image: url('../images/introduction/bg.png');
+    background: #ececec;
     margin-top: 56px;
-    /*padding:18px 0;*/
+    padding:18px 0;
     box-sizing: border-box;
 }
 .intro-center, .intro-detail{

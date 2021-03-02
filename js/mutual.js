@@ -104,6 +104,7 @@ function selectNewsDetail(data) {
 }
 
 function selectAnimalList(data) {
+    console.log(data);
     var data1 = data.records;
     if (data1 && data1.length > 0) {
         var t = '';
