@@ -18,7 +18,8 @@
     <div class="page-nav pagebg">
         <div class="nav">
             <div class="web-l">
-                <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+                <a href="../index.html"><img src="../images/logo.png" alt="" class="w" style="display: none"></a>
+                <a href="../index.html"><img src="../images/biaoti.png" alt="" class="b"></a>
             </div>
             <ul class="web-r">
                 <li><a href="visit.html">参观导览</a></li>
@@ -50,20 +51,17 @@
                 <div class="img-intro">
                     <div class="text-intro">
                         <div class="text-intro-top">
-                            <span class="web-l">贝类展区</span>
-                            <span class="web-r">
+                            <span class="web-l l-titles"></span>
+                            <span class="web-r l-next-titles">
                                 <img src="../images/introduction/shenglue.png" alt="">
-                                昆虫展区
+                                <span></span>
                             </span>
                         </div>
                         <div class="text-intro-center">
-                            标本馆有着丰富的贝类标本收藏，在展示方式上也十分新颖生动。南北两侧展室共展出了115科1000余种精品贝壳，其中，
-                            馆藏的龙宫翁戎螺和帕劳鹦鹉螺等都为稀世珍品，耳熟能详的“四大名螺”突出展现在展室之中。一片海蓝色中，贝壳如繁
-                            星般错落在白沙中，让人如置身美丽的海洋世界。
                         </div>
                         <div class="text-intro-bottom">
-                            <img src="../images/introduction/IMG_5719.png" alt="">
-                            <img src="../images/introduction/right.png" alt="">
+                            <img src="" alt="" class="img">
+                            <img src="../images/introduction/right.png" alt="" onclick="slide()">
                         </div>
                     </div>
                     <div class="gb-intro"></div>
@@ -91,14 +89,58 @@
 </div>
 <script src="../js/jquery-1.10.1.min.js"></script>
 <script>
+    var i = 0;
+    slide()
+
+    function slide() {
+        var arr = [
+            {
+                name: '贝类展区',
+                intro: '标本馆有着丰富的贝类标本收藏，在展示方式上也十分新颖生动。南北两侧展室共展出了115科1000余种精品贝壳，其中，\n' +
+                    '馆藏的龙宫翁戎螺和帕劳鹦鹉螺等都为稀世珍品，耳熟能详的“四大名螺”突出展现在展室之中。一片海蓝色中，贝壳如繁\n' +
+                    '星般错落在白沙中，让人如置身美丽的海洋世界。',
+                img: '../images/introduction/IMG_5719.png'
+            },
+            {
+                name: '昆虫展区',
+                intro: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+                img: '../images/introduction/itempic1.png'
+            },
+            {
+                name: '植物展区',
+                intro: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+                img: '../images/introduction/itempic2.png'
+            },
+            {
+                name: '海洋生物展区',
+                intro: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+                img: '../images/introduction/itempic3.png'
+            }
+        ];
+        $(".l-titles").text(arr[i].name);
+        $(".l-next-titles span").text(i==arr.length-1?arr[0].name:arr[i + 1].name);
+        $(".text-intro-center").text(arr[i].intro);
+        $(".text-intro-bottom .img").attr('src', arr[i].img);
+        if (i==arr.length-1){
+            i=0;
+        }
+        else{
+            i++;
+        }
+    }
+
     $(document).scroll(function () {
         var scroHeight = $(document).scrollTop();  //滚动高度
         if (scroHeight > 56) {
-            $(".page-nav").css('background','#5F2376');
+            $(".page-nav").css('background', '#5F2376');
             $(".page-nav").removeClass('pagebg');
+            $(".w").show();
+            $(".b").hide();
         } else {
-            $(".page-nav").css('background','transparent');
+            $(".page-nav").css('background', 'transparent');
             $(".page-nav").addClass('pagebg');
+            $(".w").hide();
+            $(".b").show();
         }
     })
 </script>

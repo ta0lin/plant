@@ -153,7 +153,7 @@
 .right-ball-three{
     cursor:pointer;
     position: absolute;
-    top:233px;
+    top:260px;
     left:155px;
 }
 .right-ball-four{
@@ -173,7 +173,7 @@
     cursor:pointer;
     color: #fff;
     position: absolute;
-    top:255px;
+    top:282px;
     left:245px;
 }
 .right-2011{
@@ -227,4 +227,20 @@
     visibility: hidden;
     overflow: hidden;
     clear: both;
+}
+.l-pic{
+    position: relative;
+}
+.l-pic .text{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height:43px;
+    background: #210A2B;
+    opacity: 0.83;
+    color:#fff;
+    text-align: center;
+    line-height: 43px;
+    cursor: pointer;
 }

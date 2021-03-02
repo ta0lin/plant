@@ -18,8 +18,7 @@
     <div class="page-nav pagebg">
         <div class="nav ">
             <div class="web-l">
-                <a href="../index.html"><img src="../images/logo.png" alt="" class="w" style="display: none"></a>
-                <a href="../index.html"><img src="../images/biaoti.png" alt="" class="b"></a>
+                <a href="../index.html"><img src="../images/logo.png" alt=""></a>
             </div>
             <ul class="web-r">
                 <li><a href="visit.html">参观导览</a></li>
@@ -33,6 +32,7 @@
         </div>
     </div>
     <div class="web-center newitem-block">
+
     </div>
     <div class="footer">
         <div>网站地图</div>
@@ -50,29 +50,35 @@
 <script src="../js/common.js"></script>
 <script src="../js/mutual.js"></script>
 <script>
+    var t=GetQueryString('t');
+    var id=GetQueryString('id');
+    var url='';
+    var data={}
+    if (t==1){
+        url='/libraryMainPlant/detail';
+    }
+    else{
+        url='/libraryMainSpecimen/detail';
+    }
     var params = {
-        url:'/news/detail',
+        url:url,
         data:{
-            'id':GetQueryString('id'),
+            'id':id
         },
         type:'get',
         contentType:'application/json;charset=utf-8',
-        callback:selectNewsDetail,
+        callback:selectListDetail,
         async:true
     }
     ajax(params);
     $(document).scroll(function () {
         var scroHeight = $(document).scrollTop();  //滚动高度
         if (scroHeight > 56) {
-            $(".page-nav").css('background', '#5F2376');
+            $(".page-nav").css('background','#5F2376');
             $(".page-nav").removeClass('pagebg');
-            $(".w").show();
-            $(".b").hide();
         } else {
-            $(".page-nav").css('background', 'transparent');
+            $(".page-nav").css('background','#ffffff');
             $(".page-nav").addClass('pagebg');
-            $(".w").hide();
-            $(".b").show();
         }
     })
 </script>

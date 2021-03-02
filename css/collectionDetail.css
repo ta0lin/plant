@@ -53,9 +53,10 @@
     font-family: PingFang SC;
     font-weight: 500;
     line-height: 28px;
+}
+.navitem ul li a , .navitem ul li a:hover{
     color: #FFFFFF;
 }
-
 .navitem ul::after {
     display: block;
     content: '';

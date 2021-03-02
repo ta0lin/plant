@@ -250,23 +250,23 @@
     .animal-right{
         margin-left: 800px;
     }
-    .animal-bottom img:nth-child(1){
+    .animal-bottom >div:nth-child(1){
         width:216px;
         height: 305px;
         margin-right: 17px;
     }
-    .animal-bottom img:nth-child(2){
+    .animal-bottom >div:nth-child(2){
         width:216px;
         height: 305px;
         margin-right: 17px;
     }
-    .animal-bottom img:nth-child(3){
+    .animal-bottom >div:nth-child(3){
         width: 486px;
         height: 303px;
         margin-right: 17px
     }
-    .animal-bottom img:nth-child(4){
-        width:216px;
+    .animal-bottom >div:nth-child(4){
+        width:231px;
         height: 305px;
     }
     .intro-center ul li{
@@ -284,23 +284,24 @@
     .tree-right {
         width: 362px;
     }
-    .left-center-img img:nth-child(1){
+    .left-center-img >div:nth-child(1){
         width:270px;
         height: 267px;
+        position: relative;
     }
-    .left-center-img img:nth-child(2){
+    .left-center-img >div:nth-child(2){
         width:150px;
         height: 267px;
     }
-    .left-bottom-img img{
+    .left-bottom-img >div{
         width: 436px;
         height: 332px;
     }
-    .tree-centers img:nth-child(1) , .tree-right img:nth-child(2){
+    .tree-centers >div:nth-child(1) , .tree-right >div:nth-child(2){
         width: 362px;
         height: 332px;
     }
-    .tree-centers img:nth-child(2) , .tree-right img:nth-child(1){
+    .tree-centers >div:nth-child(2) , .tree-right >div:nth-child(1){
         width: 362px;
         height: 616px;
     }
@@ -316,35 +317,65 @@
         width: 500px;
         height:326px;
     }
-    .sample-content img:nth-child(1){
+    .sample-content .sample-one{
         position: absolute;
         left:0px;
         top:214px;
     }
-    .sample-content img:nth-child(2){
+    .sample-content .sample-content-text1{
+        left: 102px;
+        top: 280px;
+        z-index:2
+    }
+    .sample-content .sample-two{
         position: absolute;
         left: 150px;
         top: 99px;
     }
-    .sample-content img:nth-child(3){
+    .sample-content .sample-content-text2{
+        left: 255px;
+        top: 165px;
+        z-index: 2;
+    }
+    .sample-content .sample-three{
         position: absolute;
         left: 329px;
         top: 188px;
     }
-    .sample-content img:nth-child(4){
+    .sample-content .sample-content-text3{
+        left: 427px;
+        top: 254px;
+        z-index: 2;
+    }
+    .sample-content .sample-four{
         position: absolute;
         left: 485px;
         top: 74px;
     }
-    .sample-content img:nth-child(5){
+    .sample-content .sample-content-text4{
+        left: 583px;
+        top: 140px;
+        z-index: 2;
+    }
+    .sample-content .sample-five{
         position: absolute;
         left: 676px;
         top: 154px;
     }
-    .sample-content img:nth-child(6){
+    .sample-content .sample-content-text5{
+        left: 774px;
+        top: 218px;
+        z-index: 2;
+    }
+    .sample-content .sample-six{
         position: absolute;
         left: 832px;
         top: 41px;
+    }
+    .sample-content .sample-content-text6{
+        left: 930px;
+        top: 109px;
+        z-index: 2;
     }
     .sample-content{
         width:1200px;
@@ -464,23 +495,23 @@
     .animal-right{
         margin-left: 982px;
     }
-    .animal-bottom img:nth-child(1){
+    .animal-bottom >div:nth-child(1){
         width:305px;
         height: 394px;
         margin-right: 17px;
     }
-    .animal-bottom img:nth-child(2){
+    .animal-bottom >div:nth-child(2){
         width:305px;
         height: 394px;
         margin-right: 17px;
     }
-    .animal-bottom img:nth-child(3){
+    .animal-bottom >div:nth-child(3){
         width:572px;
         height: 394px;
         margin-right: 17px;
     }
-    .animal-bottom img:nth-child(4){
-        width:305px;
+    .animal-bottom >div:nth-child(4){
+        width:320px;
         height: 394px;
     }
     .intro-center ul li{
@@ -495,23 +526,23 @@
     .tree-right {
         width: 451px;
     }
-    .left-center-img img:nth-child(1){
+    .left-center-img >div:nth-child(1){
         width:337px;
         height: 334px;
     }
-    .left-center-img img:nth-child(2){
+    .left-center-img >div:nth-child(2){
         width:220px;
         height: 333px;
     }
-    .left-bottom-img{
-        width: 673px;
+    .left-bottom-img >div{
+        width: 573px;
         height: 332px;
     }
-    .tree-centers img:nth-child(1) , .tree-right img:nth-child(2){
+    .tree-centers >div:nth-child(1) , .tree-right >div:nth-child(2){
         width: 450px;
         height: 332px;
     }
-    .tree-centers img:nth-child(2) , .tree-right img:nth-child(1){
+    .tree-centers >div:nth-child(2) , .tree-right >div:nth-child(1){
         width: 450px;
         height: 682px;
     }
@@ -523,40 +554,65 @@
         width: 559px;
         height:384px;
     }
-    .sample-content img:nth-child(1){
+    .sample-content .sample-one{
         position: absolute;
         left:125px;
         top:214px;
     }
-    .sample-content img:nth-child(2){
+    .sample-content .sample-content-text1{
+        left: 303px;
+        top: 353px;
+        z-index:2
+    }
+    .sample-content .sample-two{
         position: absolute;
         left:417px;
         top:87px;
     }
-    .sample-content img:nth-child(3){
+    .sample-content .sample-content-text2{
+        left: 594px;
+        top: 229px;
+        z-index:2
+    }
+    .sample-content .sample-three{
         position: absolute;
         left:652px;
         top:264px;
     }
-    .sample-content img:nth-child(1){
-        position: absolute;
-        left:125px;
-        top:214px;
+    .sample-content .sample-content-text3{
+        left: 831px;
+        top: 402px;
+        z-index:2
     }
-    .sample-content img:nth-child(4){
+    .sample-content .sample-four{
         position: absolute;
         left:842px;
         top:36px;
     }
-    .sample-content img:nth-child(5){
-        position: absolute;
-        left:1102px;
-        top:228px;
+    .sample-content .sample-content-text4{
+        left: 1018px;
+        top: 176px;
+        z-index:2
     }
-    .sample-content img:nth-child(6){
+    .sample-content .sample-five{
         position: absolute;
-        left:1333px;
-        top:41px;
+        left: 1072px;
+        top: 228px;
+    }
+    .sample-content .sample-content-text5{
+        left: 1248px;
+        top: 349px;
+        z-index:2
+    }
+    .sample-content .sample-six{
+        position: absolute;
+        left: 1303px;
+        top: 41px;
+    }
+    .sample-content .sample-content-text6{
+        left: 1480px;
+        top: 168px;
+        z-index:2
     }
     .sample-container{
         height: 780px;

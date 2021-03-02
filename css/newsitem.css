@@ -55,7 +55,7 @@
     width: 1022px;
     display: block;
     height:676px;
-    margin:47px auto 0;
+    margin-top: 30px;
 }
 .content1::after{
     display: block;
