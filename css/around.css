@@ -1,0 +1,28 @@
+.around-container{
+    width:100%;
+    height:auto;
+    background: #ECECEC;
+}
+.around-block{
+    height:auto;
+    background: #fff;
+    padding:40px 47px 150px;
+    box-sizing: border-box;
+    margin:56px auto 20px;
+}
+.around-content{
+    text-align: center;
+    margin-top: 102px;
+}
+.around-content img{
+    width: 446px;
+    height:253px;
+    margin-bottom: 26px;
+}
+.around-content span{
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 22px;
+    color: #AEADB1;
+}

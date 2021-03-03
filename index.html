@@ -26,7 +26,7 @@
                 <li><a href="pages/newsDetail.html">新闻资讯</a></li>
                 <li><a href="pages/collections.html">馆藏标本</a></li>
                 <li><a href="pages/volunteer.html">志愿团队</a></li>
-                <li><a href="">捐赠鸣谢</a></li>
+                <li><a href="pages/donate.html">捐赠鸣谢</a></li>
                 <li><a href="pages/contact.html">联系我们</a></li>
             </ul>
         </div>
@@ -58,7 +58,7 @@
                             <img src="images/index/location.png" alt="">
                         </div>
                         <div class="web-l intro-nav">
-                            <a href="#"><p>预约参观 <img src="images/index/right.png" alt=""></p></a>
+                            <a href="pages/around.html"><p>预约参观 <img src="images/index/right.png" alt=""></p></a>
                             <p>线上预约避免拥挤提高效率</p>
                         </div>
                     </li>
@@ -307,7 +307,7 @@
                         <p>景昃鸣禽集，水木湛清华</p>
                         <p>完全就是诗里的景象，景色错落有致，校园动物可爱萌动</p>
                         <p>感受生机勃勃的校园情景</p>
-                        <a href="pages/introduction01.html">
+                        <a href="pages/introduction01.html?type=3&classify=">
                             <button>了解更多</button>
                         </a>
                     </div>
@@ -343,9 +343,9 @@
     </div>
 </div>
 <div class="footer">
-    <div>网站地图</div>
-    <div>关于我们</div>
-    <div>捐赠鸣谢</div>
+    <div><a href="pages/contact.html">网站地图</a></div>
+    <div><a href="">关于我们</a></div>
+    <div><a href="pages/donate.html">捐赠鸣谢</a></div>
     <div>
         清华大学新闻中心版权所有，清华大学新闻网编辑部维护，电子信箱：news@qinghua.edu.cn
     </div>
@@ -388,6 +388,14 @@
     $(window).resize(function () {
         header(873, 1920);
     });
+    $(document).scroll(function () {
+        var scroHeight = $(document).scrollTop();  //滚动高度
+        if (scroHeight > 56) {
+            $(".page-nav").css('background','#5F2376')
+        } else {
+            $(".page-nav").css('background','transparent')
+        }
+    })
 </script>
 </body>
 </html>

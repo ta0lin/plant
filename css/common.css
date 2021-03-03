@@ -38,10 +38,10 @@
     border-bottom: 1px solid #5F2376;;
 }
 .pagebg{
-    background: #fff;
+    background: #5F2376;
 }
 .pagebg ul li a{
-    color: #1F2122;
+    color: #ffffff;
 }
 .web-center{
     min-width: 1200px;
@@ -108,6 +108,9 @@
     font-size: 16px;
     cursor: pointer;
 
+}
+.footer div a , .footer div a:hover{
+    color:#fff
 }
 .footer div:nth-child(1), .footer div:nth-child(2) , .footer div:nth-child(3){
     color: #FFFFFF;
@@ -386,6 +389,9 @@
     .news-pic-right{
         right:-50px;
     }
+    .block-item{
+        margin:0 42px 65px 0;
+    }
 }
 
 /*	pc 端 1280 以上的屏幕	*/
@@ -621,5 +627,8 @@
     }
     .news-pic-right{
         right:-70px;
+    }
+    .block-item{
+        margin:0 109px 65px 0;
     }
 }

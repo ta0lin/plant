@@ -104,14 +104,17 @@ function selectNewsDetail(data) {
 }
 
 function selectAnimalList(data) {
-    console.log(data);
+    var type = GetQueryString('type');
     var data1 = data.records;
     if (data1 && data1.length > 0) {
         var t = '';
-        if (data1[0].title) {
+        if (type==2) {
             t = '2'
-        } else {
+        } else if(type ==1) {
             t = '1'
+        }
+        else{
+            t='3'
         }
         var str = '';
         for (var i = 0; i < data1.length; i++) {

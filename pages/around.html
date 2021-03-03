@@ -11,12 +11,12 @@
 <body>
 <script>
     document.write('<link rel="stylesheet" href="../css/common.css?' + new Date().getTime() + '">')
-    document.write('<link rel="stylesheet" href="../css/newsitem.css?' + new Date().getTime() + '">')
+    document.write('<link rel="stylesheet" href="../css/around.css?' + new Date().getTime() + '">')
 </script>
-<div class="newsitem-container">
+<div class="around-container">
     <!--导航-->
     <div class="page-nav pagebg">
-        <div class="nav ">
+        <div class="nav">
             <div class="web-l">
                 <a href="../index.html"><img src="../images/logo.png" alt=""></a>
             </div>
@@ -26,40 +26,37 @@
                 <li><a href="newsDetail.html">新闻资讯</a></li>
                 <li><a href="collections.html">馆藏标本</a></li>
                 <li><a href="volunteer.html">志愿团队</a></li>
-                 <li><a href="donate.html">捐赠鸣谢</a></li>
+                <li><a href="donate.html">捐赠鸣谢</a></li>
                 <li><a href="contact.html">联系我们</a></li>
             </ul>
         </div>
     </div>
-    <div class="web-center newitem-block">
+    <div class="web-center around-block">
+        <div class="web-center-title collections-title" style="margin-bottom: 35px;">
+            <h3>
+                <span>预约</span>参观
+            </h3>
+            <span class="shu">/</span>
+        </div>
+        <div class="around-content">
+            <img src="../images/around/none.png" alt="">
+            <p>
+                功能在建中～感谢您的期待
+            </p>
+        </div>
+    </div>
+    <!--简介详情-->
+    <div class="footer">
+        <div><a href="contact.html">网站地图</a></div>
+        <div><a href="">关于我们</a></div>
+        <div><a href="donate.html">捐赠鸣谢</a></div>
+        <div>
+            清华大学新闻中心版权所有，清华大学新闻网编辑部维护，电子信箱：news@qinghua.edu.cn
+        </div>
+        <div>
+            Copyright 2001-2020 news@qinghua.edu.cn.All rights reserved
+        </div>
     </div>
 </div>
-<div class="footer">
-    <div><a href="contact.html">网站地图</a></div>
-    <div><a href="">关于我们</a></div>
-    <div><a href="donate.html">捐赠鸣谢</a></div>
-    <div>
-        清华大学新闻中心版权所有，清华大学新闻网编辑部维护，电子信箱：news@qinghua.edu.cn
-    </div>
-    <div>
-        Copyright 2001-2020 news@qinghua.edu.cn.All rights reserved
-    </div>
-</div>
-<script src="../js/jquery-1.10.1.min.js"></script>
-<script src="../js/common.js"></script>
-<script src="../js/mutual.js"></script>
-<script>
-    var params = {
-        url:'/news/detail',
-        data:{
-            'id':GetQueryString('id'),
-        },
-        type:'get',
-        contentType:'application/json;charset=utf-8',
-        callback:selectNewsDetail,
-        async:true
-    }
-    ajax(params);
-</script>
 </body>
 </html>

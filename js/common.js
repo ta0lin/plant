@@ -16,11 +16,4 @@ function GetQueryString(name) {
     r = null;
     return context == null || context == "" || context == "undefined" ? "" : context;
 }
-$(document).scroll(function () {
-    var scroHeight = $(document).scrollTop();  //滚动高度
-    if (scroHeight > 56) {
-        $(".page-nav").css('background','#5F2376')
-    } else {
-        $(".page-nav").css('background','transparent')
-    }
-})
+

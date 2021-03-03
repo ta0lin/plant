@@ -1,0 +1,117 @@
+.newsdetail-container{
+    width:100%;
+    height:auto;
+    background: #ECECEC;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+.newsdetail-header img{
+    width:100%;
+    height:100%;
+    display: block;
+}
+.donate-block{
+    height:auto;
+    background: #fff;
+    padding:37px 50px 76px;
+    box-sizing: border-box;
+    margin: -100px auto 0 auto;
+    position: relative;
+    z-idnex:4
+}
+.donate-title{
+    width: 100%;
+    text-align: center;
+}
+.donate-title h3{
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    line-height: 28px;
+    color: #313131;
+}
+.donate-title p{
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 28px;
+    color: #313131;
+}
+.container-type{
+    width: 1000px;
+    margin: 75px auto 86px auto;
+}
+.container-type img{
+    width: 82px;
+    height: 82px;
+}
+.container-type::after{
+    display: block;
+    content: '';
+    height:0;
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
+}
+.container-type .type-item{
+    float: left;
+    text-align: center;
+}
+.container-type .type-item:nth-child(1){
+    width: 158px;
+}
+.container-type .type-item:nth-child(2){
+    width: 384px;
+    margin-left: 144px;
+}
+.container-type .type-item:nth-child(3){
+    width: 212px;
+    margin-left: 102px;
+}
+.type-item p{
+    margin:17px auto 21px;
+}
+.block-item{
+    width:218px;
+    height:auto;
+    float: left;
+}
+.block-item:nth-child(4n-4){
+    margin-right:0
+}
+.item-pic{
+    margin-bottom: 20px;
+}
+.block-item .item-pic img{
+    width: 218px;
+    height:144px;
+}
+.right-date h3 {
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    line-height: 22px;
+    color: #8D7A9C;
+    text-align: right;
+}
+.right-date span{
+    font-size: 11px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    line-height: 16px;
+    color: #8D7A9C;
+}
+.item-text::after , .donate-block::after{
+    height:0;
+    content:'';
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
+    display: block;
+}
+.left-text{
+    float:left
+}
+.right-date{
+    float: right;
+}
