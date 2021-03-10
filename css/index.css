@@ -249,7 +249,7 @@
 
 .news-content {
     width: 420px;
-    margin-top: 196px;
+    margin-top: 150px;
 }
 
 .news-item {
@@ -565,7 +565,7 @@
     display: inline-block;
 }
 
-.sample-content-text5 .line-shu, .sample-content-text6 .line-shu {
+.sample-content-text5 .line-shu, .sample-content-text6 .line-shu , .sample-content-text1 .line-shu {
     height: 110px
 }
 
@@ -587,7 +587,7 @@
     margin-top: -58px;
 }
 
-.sample-content-text5 .text, .sample-content-text6 .text {
+.sample-content-text5 .text, .sample-content-text6 .text , .sample-content-text1 .text{
     margin-top: -92px;
 }
 

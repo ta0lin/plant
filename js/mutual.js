@@ -62,7 +62,7 @@ function selecNewsData(data) {
 
 function selecNewsDataIndex(data) {
     if (data.records != undefined && data.records.length > 0) {
-        var newdata = data.records.slice(0, 3);
+        var newdata = data.records.slice(0, 6);
         var str = ''
         for (var i = 0; i < newdata.length; i++) {
             str += ' <div class="news-item">' +
@@ -118,11 +118,10 @@ function selectAnimalList(data) {
         }
         var str = '';
         for (var i = 0; i < data1.length; i++) {
-            console.log(data1[i].tags == null);
             str += '<div class="img-item">' +
                 '<a href="../pages/introductiondetail.html?id=' + data1[i].id + '&t=' + t + '">' +
                 '<div class="item-pic">' +
-                '<img src="' + img(data1[i].specimentImageUrl ? data1[i].specimentImageUrl : data1[i].specimentImageUrl) + '" alt="">' +
+                '<img src="' + img(data1[i].specimentImageUrl ? data1[i].specimentImageUrl : data1[i].imageUrl) + '" alt="">' +
                 '</div>' +
                 '<div class="item-title">' +
                 '<span>' + data1[i].name +
@@ -252,6 +251,7 @@ function points(data) {
                 ' <label for="">' + data.records[i].tags +
                 ' </label>'
         }
+        $(".showdetail" + s).text('');
         $(".showdetail" + s).append(str);
         $(".showdetail" + s).show();
     }
