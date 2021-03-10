@@ -68,7 +68,7 @@ function selecNewsDataIndex(data) {
             str += ' <div class="news-item">' +
                 ' <div class="news-item-data">' + datas(data.records[i].updateTime, 'y', 'm', 'd') + '</div>' +
                 ' <div class="news-item-title">' +
-                ' <a href="/pages/newsitem1.html?id=' + newdata[i].id + '">' +
+                ' <a href="/plant/pages/newsitem1.html?id=' + newdata[i].id + '">' +
                 ' <span></span>' + newdata[i].title + '' +
                 ' </a>' +
                 ' </div>' +
