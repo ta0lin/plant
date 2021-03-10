@@ -103,7 +103,6 @@
     left:50%;
     transform: translate(-50%);
     font-family: PingFang SC;
-    font-weight: 500;
     line-height: 22px;
     font-size: 16px;
     cursor: pointer;
@@ -387,7 +386,7 @@
         height: 638px;
     }
     .news-pic-right{
-        right:-50px;
+        right:-120px;
     }
     .block-item{
         margin:0 42px 65px 0;
@@ -626,7 +625,7 @@
         height: 780px;
     }
     .news-pic-right{
-        right:-70px;
+        right:-120px;
     }
     .block-item{
         margin:0 109px 65px 0;

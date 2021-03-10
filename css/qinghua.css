@@ -127,7 +127,7 @@
     text-align: center;
     font-size: 26px;
     font-family: PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 37px;
     color: #560A71;
     padding-top: 51px;
@@ -143,7 +143,7 @@
     top:63px;
     font-size: 16px;
     font-family: PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 22px;
     color: #5D4F50;
 }
@@ -210,6 +210,9 @@
     position: absolute;
     right:-60px
 }
+.te a , .t a{
+    color:#333
+}
 .plant-text2{
     width: 655px;
     top: 295px;
@@ -255,7 +258,6 @@
     width: 728px;
     font-size: 14px;
     font-family: PingFang SC;
-    font-weight: 400;
     line-height: 24px;
     color: #FFFFFF;
 }

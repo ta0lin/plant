@@ -16,14 +16,16 @@
 .newitem-block h3{
     font-size: 18px;
     font-family: PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 25px;
     color: #1F2122;
     text-align: center;
+    box-sizing: border-box;
+}
+.newitem-block .newitem-title{
+    text-align: right;
     border-bottom:1px dashed #E5E3E2;
     padding-bottom: 22px;
-    box-sizing: border-box;
-    margin-bottom: 28px;
 }
 .newitem-block .newsdate{
     position: absolute;
@@ -33,31 +35,32 @@
 .newsdate p{
     font-size: 16px;
     font-family: PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 22px;
     color: #8D7A9C;
 }
 .newsdate span{
     font-size: 11px;
     font-family: PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 16px;
     color: #8D7A9C;
 }
 .news-content p{
     font-size: 14px;
     font-family: PingFang SC;
-    font-weight: 400;
     line-height: 38px;
     color: #313131;
+    text-indent: 2em;
 }
 .news-content .pic-bottom{
     width: 1022px;
     display: block;
     height:676px;
-    margin-top: 30px;
+    margin: 30px auto;
+
 }
-.content1::after{
+.content1::after , .content2::after{
     display: block;
     content: '';
     height:0;
@@ -71,7 +74,7 @@
 }
 .content1-right{
     height:385px;
-    width:581px;
+    width:530px;
     float:right;
 }
 .content1-right img , .content2-left img{
@@ -80,7 +83,7 @@
 }
 .content2-left{
     float: left;
-    width: 581px;
+    width: 520px;
     height: 385px;
 }
 .content2-right{
@@ -91,4 +94,7 @@
     height: 676px;
     display: block;
     margin:50px auto;
+}
+.content-img{
+    text-align: center;
 }

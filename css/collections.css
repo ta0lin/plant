@@ -49,14 +49,13 @@
 .detail-r-title{
     font-size: 18px;
     font-family: PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 25px;
 }
 .detail-r-content{
     margin-top: 25px;
     font-size: 14px;
     font-family: PingFang SC;
-    font-weight: 400;
     line-height: 24px;
 }
 .detail-bg{
@@ -90,7 +89,7 @@
 .left-title{
     font-size: 36px;
     font-family: PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 50px;
     color: #5F2376;
 }
@@ -104,7 +103,7 @@
 .center-title{
     font-size: 18px;
     font-family: PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 25px;
     color: #1F2122;
     margin-top: 219px;
@@ -113,7 +112,6 @@
     margin-top: 25px;
     font-size: 14px;
     font-family: PingFang SC;
-    font-weight: 400;
     line-height: 24px;
     color: #313131;
 }
@@ -216,7 +214,6 @@
 .l-content{
     font-size: 18px;
     font-family: PingFang SC;
-    font-weight: 400;
     color: #222222;
 }
 .l-pic5{

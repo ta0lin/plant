@@ -90,11 +90,12 @@
     var contentType='';
     chooseType();
     function chooseType(){
+        var season = GetQueryString('season');
         if (type == 1){
             url = '/libraryMainPlant/pageList';
             data.classify = classify;
             data.name = '';
-            data.season = '';
+            data.season = season;
             types='get';
             $(".left-title").text("花展区");
             $(".intro-detail-content-title span").text('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')

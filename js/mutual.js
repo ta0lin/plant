@@ -38,7 +38,7 @@ function selecNewsData(data) {
                 '<img src="' + img(data.records[i].imageUrl) + '" alt="">' +
                 ' </div>' +
                 ' <div class="detail-r">' +
-                ' <a href="newsitem1.html?id=' + data.records[i].id + '">' +
+                ' <a href="../pages/newsitem1.html?id=' + data.records[i].id + '">' +
                 ' <div class="detail-r-title">' + data.records[i].title +
                 ' </div>' +
                 ' <div class="detail-r-content">' + data.records[i].description +
@@ -68,7 +68,7 @@ function selecNewsDataIndex(data) {
             str += ' <div class="news-item">' +
                 ' <div class="news-item-data">' + datas(data.records[i].updateTime, 'y', 'm', 'd') + '</div>' +
                 ' <div class="news-item-title">' +
-                ' <a href="newsitem1.html?id=' + newdata[i].id + '">' +
+                ' <a href="/pages/newsitem1.html?id=' + newdata[i].id + '">' +
                 ' <span></span>' + newdata[i].title + '' +
                 ' </a>' +
                 ' </div>' +
@@ -81,13 +81,13 @@ function selecNewsDataIndex(data) {
 
 //查询新闻详情
 function selectNewsDetail(data) {
-    console.log(data);
     var str = '';
     str += '<div class="newsdate">' +
         '            <p>' + datas(data.updateTime, '', '', 'd') + ' </p>' +
         '            <span>' + datas(data.updateTime, 'y', 'm', '') + '</span>' +
         '        </div>' +
         '        <h3>' + data.title + '</h3>' +
+        '<div class="newitem-title">作者：' + data.author + '</div>' +
         '<div class="news-content">';
     for (var i = 0; i < data.detailList.length; i++) {
         if (data.detailList[i].type == 2) {
@@ -95,6 +95,7 @@ function selectNewsDetail(data) {
         } else if (data.detailList[i].type == 1) {
             str += '            <div class="content-img">' +
                 '                <img src="' + img(data.detailList[i].content) + '" alt="" class="pic-bottom">' +
+                '<div style="margin-bottom: 20px;">' + data.detailList[i].caption + '</div>' +
                 '            </div>'
         }
 
@@ -108,13 +109,12 @@ function selectAnimalList(data) {
     var data1 = data.records;
     if (data1 && data1.length > 0) {
         var t = '';
-        if (type==2) {
+        if (type == 2) {
             t = '2'
-        } else if(type ==1) {
+        } else if (type == 1) {
             t = '1'
-        }
-        else{
-            t='3'
+        } else {
+            t = '3'
         }
         var str = '';
         for (var i = 0; i < data1.length; i++) {
@@ -156,19 +156,77 @@ function selectAnimalList(data) {
 }
 
 function selectListDetail(data) {
+    var t = GetQueryString('t');
     var str = '';
     if (data.libraryMain) {
         var d = data.libraryMain;
         var imgarr = d.imagesUrl.split(",");
-        str =
-            '<h3>' + d.title + '</h3>' +
-            '<div class="news-content">' +
-            '<p>' + d.content + '</p>' +
-            '<div class="content-img">';
-        for (var i = 0; i < imgarr.length; i++) {
-            str += '<img src="' + img(imgarr[i]) + '" alt="" class="pic-bottom">';
+        if (imgarr.length == 1) {
+            str = '<h3>' + d.title + '</h3>' +
+                '<div class="newitem-title"></div>' +
+                ' <div class="news-content" style="margin-top: 30px">' +
+                '            <div class="content1">' +
+                '                <div class="content1-right">' +
+                '                    <img src="'+img(imgarr[0])+'" alt="">' +
+                '                </div>' +
+                '                <div class="content1-left">' +
+                '                    <p>'+d.content+'</p>' +
+                '                </div>' +
+                '            </div>' +
+                '            <p>' +
+                ''+d.content+''+
+                '            </p>' +
+                '            <p>' +
+                ''+d.content+'' +
+                '            </p>' +
+                '        </div>'
+        } else if (imgarr.length == 2) {
+            str = '<h3>' + d.title + '</h3>' +
+                '<div class="newitem-title"></div>' +
+                '<div class="news-content" style="margin-top: 30px">' +
+                '            <div class="content1">' +
+                '                <div class="content1-right">' +
+                '                    <img src="' + img(imgarr[0]) + '" alt="">' +
+                '                </div>' +
+                '                <div class="content1-left">' +
+                '<p>' + d.content + '</p>' +
+                '                </div>' +
+                '            </div>' +
+                '            <div class="content2">' +
+                '                <div class="content2-left">' +
+                '                    <img src="' + img(imgarr[1]) + '" alt="">' +
+                '                </div>' +
+                '                <div class="content2-right">' +
+                '<p>'+d.content+'</p>' +
+                '            </div>' +
+                '        </div>'
+        } else if (imgarr.length == 3) {
+            str = '<h3>' + d.title + '</h3>' +
+                '<div class="newitem-title"></div>' +
+                ' <div class="news-content" style="margin-top: 30px">' +
+                '            <p>'+d.content+'' +
+                '            </p>' +
+                '            <img src="' + img(imgarr[0]) + '" alt="" class="pic-center">' +
+                '            <p>' +
+                ''+d.content+'' +
+                '            </p>' +
+                '            <img src="' + img(imgarr[1]) + '" alt="" class="pic-center">' +
+                '            <p>' +
+                ''+d.content+'' +
+                '            </p>' +
+                '            <img src="' + img(imgarr[2]) + '" alt="" class="pic-center">' +
+                '        </div>'
+        } else {
+            str =
+                '<h3>' + d.title + '</h3>' +
+                '<div class="news-content">' +
+                '<p>' + d.content + '</p>' +
+                '<div class="content-img">';
+            for (var i = 0; i < imgarr.length; i++) {
+                str += '<img src="' + img(imgarr[i]) + '" alt="" class="pic-bottom">';
+            }
+            str += '</div></div>'
         }
-        str += '</div></div>'
     } else {
         str =
             '<h3>' + data.title + '</h3>' +
@@ -182,14 +240,65 @@ function selectListDetail(data) {
 }
 
 function points(data) {
+    var s = sessionStorage.getItem('data')
     var str = '';
     if (data.records.length > 0) {
+        // for (var i = 0; i < data.records.length; i++) {
+        //     str += '<img src="' + img(data.records[i].imagesUrl) + '" alt="" data-src="' + img(data.records[i].imagesUrl) + '"  onclick=\'imgClick("'+img(data.records[i].imagesUrl)+'")\'>'
+        // }
+        // $(".pic-item").append(str)
         for (var i = 0; i < data.records.length; i++) {
-            str += '<img src="' + img(data.records[i].imagesUrl) + '" alt="" data-src="' + img(data.records[i].imagesUrl) + '"  onclick=\'imgClick("'+img(data.records[i].imagesUrl)+'")\'>'
+            str += '<h3><span></span>' + data.records[i].name + '</h3>' +
+                ' <label for="">' + data.records[i].tags +
+                ' </label>'
         }
-        $(".pic-item").append(str)
-        showdata()
+        $(".showdetail" + s).append(str);
+        $(".showdetail" + s).show();
     }
+
+}
+
+function getFlower(data) {
+    var str1 = '';
+    var str2 = '';
+    var str3 = '';
+    var str4 = '';
+    var chun = [];
+    var xia = [];
+    var qiu = [];
+    var dong = [];
+    for (var i = 0; i < data.length; i++) {
+        if (data[i].season == 1) {
+            chun.push(data[i]);
+        } else if (data[i].season == 2) {
+            xia.push(data[i]);
+        } else if (data[i].season == 3) {
+            qiu.push(data[i]);
+        } else {
+            dong.push(data[i]);
+        }
+    }
+    var chun1 = chun.slice(0, 3);
+    var xia1 = xia.slice(0, 2);
+    var qiu1 = qiu.slice(0, 3);
+    var dong1 = dong.slice(0, 2);
+    for (var i = 0; i < chun1.length; i++) {
+        str1 += '<div class="t t' + (i + 1) + '"><a href="../pages/introductiondetail.html?t=1&id=' + chun1[i].id + '">' + chun1[i].name + '</a></div>'
+    }
+    for (var i = 0; i < xia1.length; i++) {
+        str2 += '<div class="t t' + (i + 1) + '"><a href="../pages/introductiondetail.html?t=1&id=' + chun1[i].id + '">' + xia1[i].name + '</a></div>'
+    }
+    for (var i = 0; i < qiu1.length; i++) {
+        str3 += '<div class="t t' + (i + 1) + '"><a href="../pages/introductiondetail.html?t=1&id=' + chun1[i].id + '">' + qiu1[i].name + '</a></div>'
+    }
+    for (var i = 0; i < dong1.length; i++) {
+        str4 += '<div class="t t' + (i + 1) + '"><a href="../pages/introductiondetail.html?t=1&id=' + chun1[i].id + '">' + dong1[i].name + '</a></div>'
+    }
+    $(".plant-text1").append(str1);
+    $(".plant-text2").append(str2);
+    $(".plant-text3").append(str3);
+    $(".plant-text4").append(str4);
+
 }
 
 //显示的图片处理

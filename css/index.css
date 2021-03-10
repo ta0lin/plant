@@ -69,7 +69,7 @@
 .intro-title {
     font-size: 26px;
     font-family: PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 37px;
     color: #FFFFFF;
     text-align: center;
@@ -162,7 +162,7 @@
     text-align: center;
     font-size: 26px;
     font-family: PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .fictitious-title span:nth-child(1) {
@@ -259,7 +259,7 @@
 .news-item-data {
     font-size: 20px;
     font-family: PingFang SC;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 28px;
     color: #5D5D5D;
     margin-left: 15px;
@@ -268,7 +268,7 @@
 .news-item-title , .news-item-title:hover {
     font-size: 18px;
     font-family: PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 25px;
     color: #1F2122;
     margin-top: 7px;
@@ -315,7 +315,9 @@
 .new-fictitious-title span:nth-child(2), .new-fictitious-title span:nth-child(3) {
     color: #fff !important;
 }
-
+.fictitious-title img{
+    margin-top: -5px;
+}
 /**/
 .animal-center {
     margin: 0 auto;
@@ -351,7 +353,6 @@
 .animal-right p {
     font-size: 18px;
     font-family: PingFang SC;
-    font-weight: 400;
     line-height: 40px;
     color: #222222;
     text-align: right;
@@ -461,7 +462,6 @@
 .tree-left p {
     font-size: 18px;
     font-family: PingFang SC;
-    font-weight: 400;
     line-height: 40px;
     color: #222222;
 }

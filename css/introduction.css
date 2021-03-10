@@ -19,7 +19,7 @@
 }
 .intro-title{
     font-family: PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
     /*color: #1F2122;*/
     text-align: center;
     border-bottom: 1px solid #E5E3E2;
@@ -119,7 +119,7 @@
     transform: translate(-50%);
     font-size: 18px;
     font-family: PingFang SC;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 25px;
     color: #1F2122;
 }
@@ -195,6 +195,9 @@
     box-sizing: border-box;
     border-bottom: 1px solid #D3D3D3;
 }
+.img-item a{
+    color:#313131
+}
 .intro-detail-block-none{
     display: none;
     width: 100%;
@@ -203,4 +206,12 @@
     font-weight: bold;
     padding:40px 0;
     box-sizing: border-box;
+}
+.item-introduce{
+    overflow: hidden; /** 隐藏超出的内容 **/
+    word-break: break-all;
+    text-overflow: ellipsis; /** 多行 **/
+    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2; /** 显示的行数 **/
 }
