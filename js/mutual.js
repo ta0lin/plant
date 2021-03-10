@@ -122,7 +122,7 @@ function selectAnimalList(data) {
             str += '<div class="img-item">' +
                 '<a href="../pages/introductiondetail.html?id=' + data1[i].id + '&t=' + t + '">' +
                 '<div class="item-pic">' +
-                '<img src="' + img(data1[i].imagesUrl ? data1[i].imagesUrl : data1[i].imageUrl) + '" alt="">' +
+                '<img src="' + img(data1[i].specimentImageUrl ? data1[i].specimentImageUrl : data1[i].specimentImageUrl) + '" alt="">' +
                 '</div>' +
                 '<div class="item-title">' +
                 '<span>' + data1[i].name +
@@ -156,10 +156,10 @@ function selectAnimalList(data) {
 }
 
 function selectListDetail(data) {
-    var t = GetQueryString('t');
+    // var t = GetQueryString('t');
     var str = '';
-    if (data.libraryMain) {
-        var d = data.libraryMain;
+    // if (data.libraryMain) {
+        var d = data.libraryMain?data.libraryMain:data;
         var imgarr = d.imagesUrl.split(",");
         if (imgarr.length == 1) {
             str = '<h3>' + d.title + '</h3>' +
@@ -227,15 +227,15 @@ function selectListDetail(data) {
             }
             str += '</div></div>'
         }
-    } else {
-        str =
-            '<h3>' + data.title + '</h3>' +
-            '<div class="news-content">' +
-            '<p>' + data.content + '</p>' +
-            '<div class="content-img">' +
-            '<img src="' + img(data.imagesUrl) + '" alt="" class="pic-bottom">' +
-            '</div></div>'
-    }
+    // } else {
+    //     str =
+    //         '<h3>' + data.title + '</h3>' +
+    //         '<div class="news-content">' +
+    //         '<p>' + data.content + '</p>' +
+    //         '<div class="content-img">' +
+    //         '<img src="' + img(data.imagesUrl) + '" alt="" class="pic-bottom">' +
+    //         '</div></div>'
+    // }
     $(".newitem-block").append(str)
 }
 
