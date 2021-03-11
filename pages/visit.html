@@ -102,8 +102,10 @@
         var scroHeight = $(document).scrollTop();  //滚动高度
         if (scroHeight > 56) {
             $(".page-nav").css('background','#5F2376')
+            $(".nav-active").css('border-bottom','2px solid #ffffff')
         } else {
             $(".page-nav").css('background','transparent')
+            $(".nav-active").css('border-bottom','2px solid #5F2376')
         }
     })
 </script>

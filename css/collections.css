@@ -71,12 +71,12 @@
     height:auto;
     float: left;
     margin-top: 87px;
+    margin-left: 40px;
 }
-.bg-center{
-    margin:0 330px 0 393px;
-}
+/*.bg-center{*/
+/*    margin:0 330px 0 393px;*/
+/*}*/
 .bg-right{
-    width:330px;
     float: right;
     margin-top: 42px;
     height:496px;
@@ -118,7 +118,6 @@
 .right-top{
     position: absolute;
     top:0;
-    left:50%;
     transform: translate(-50%);
     cursor:pointer;
 }
@@ -126,7 +125,6 @@
     cursor:pointer;
     position: absolute;
     bottom:0;
-    left:50%;
     transform: translate(-50%);
 }
 .right-dashed{
@@ -198,7 +196,11 @@
     z-index: 2;
 }
 .l-pic2 , .l-pic3{
-    margin-top: 11px;
+    margin-top: 19px;
+    float: left;
+}
+.l-pic4 .l-pic2 , .l-pic4 .l-pic3{
+    margin-top: 8px;
     float: left;
 }
 .l-pic3{
@@ -212,12 +214,12 @@
     margin-top: 23px;
 }
 .l-content{
-    font-size: 18px;
+    font-size: 14px;
     font-family: PingFang SC;
     color: #222222;
 }
 .l-pic5{
-    margin-top: 11px;
+    margin-top: 20px;
 }
 .l-pic4::after{
     display: block;

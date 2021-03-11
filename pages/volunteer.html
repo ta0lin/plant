@@ -23,7 +23,7 @@
                 <li><a href="introduction.html">虚拟标本馆</a></li>
                 <li><a href="newsDetail.html">新闻资讯</a></li>
                 <li><a href="collections.html">馆藏标本</a></li>
-                <li><a href="volunteer.html">志愿团队</a></li>
+                <li class="nav-active"><a href="volunteer.html">志愿团队</a></li>
                  <li><a href="donate.html">捐赠鸣谢</a></li>
                 <li><a href="contact.html">联系我们</a></li>
             </ul>
@@ -173,8 +173,10 @@
         var scroHeight = $(document).scrollTop();  //滚动高度
         if (scroHeight > 56) {
             $(".page-nav").css('background','#5F2376')
+            $(".nav-active").css('border-bottom','2px solid #ffffff')
         } else {
             $(".page-nav").css('background','transparent')
+            $(".nav-active").css('border-bottom','2px solid #5F2376')
         }
     })
 </script>

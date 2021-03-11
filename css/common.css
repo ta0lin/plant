@@ -21,24 +21,29 @@
     height: 28px;
     text-align: center;
     margin-left: 67px;
-    line-height: 65px;
+    margin-top: 20px;
 }
 .nav ul li a{
     color: #fff
 }
-.nav ul li:last-child{
-    /*content: '';*/
-    /*display: block;*/
-    /*overflow: hidden;*/
-    /*visibility: hidden;*/
-    /*clear: both;*/
-    /*height:0;*/
+.nav ul::after .nav::after{
+    display: block;
+    content: '';
+    height:0;
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
 }
 .nav-active {
-    border-bottom: 1px solid #5F2376;;
+    border-bottom: 2px solid #5F2376;
+    box-sizing: border-box;
 }
 .pagebg{
     background: #5F2376;
+}
+.pagebg .nav-active {
+    border-bottom: 2px solid #ffffff;
+    box-sizing: border-box;
 }
 .pagebg ul li a{
     color: #ffffff;
@@ -157,6 +162,15 @@
 
 /*  pc 端 1024 - 1280  */
 @media screen and (min-width: 1021px) and (max-width: 1600px){
+    .bg-center {
+        margin: 0 330px 0 250px;
+    }
+    .bg-right{
+        width:250px;
+    }
+    .right-top , .right-bottom{
+        left:66%;
+    }
     .nav{
         width: 1200px;
     }
@@ -185,20 +199,20 @@
         height:1200px;
     }
     .l-pic1{
-        width:546px;
-        height:376px;
+        width:537px;
+        height:403px;
     }
     .l-pic2 , .l-pic3{
-        width:265px;
+        width:261px;
         height:169px;
     }
     .l-pic5{
-        width: 547px;
+        width: 539px;
         height:170px;
     }
     .l-content{
         margin: 26px 0 30px 0;
-        line-height: 30px;
+        line-height: 24px;
     }
     .cg-content , .needknow-content{
         width:1150px;
@@ -395,6 +409,15 @@
 
 /*	pc 端 1280 以上的屏幕	*/
 @media screen and (min-width: 1600px){
+    .bg-center {
+        margin: 0 330px 0 393px;
+    }
+    .bg-right{
+        width:330px;
+    }
+    .right-top , .right-bottom{
+        left:50%;
+    }
     .nav{
         width: 1400px;
     }
@@ -426,20 +449,20 @@
         height:1350px;
     }
     .l-pic1{
-        width:646px;
-        height:476px;
+        width:637px;
+        height:450px;
     }
     .l-pic2 , .l-pic3{
-        width:315px;
+        width:311px;
         height:219px;
     }
     .l-pic5{
-        width: 647px;
+        width: 640px;
         height:219px;
     }
     .l-content{
         margin: 31px 0 46px 0;
-        line-height: 40px;
+        line-height: 24px;
     }
     .cg-content , .needknow-content{
         width:1289px;

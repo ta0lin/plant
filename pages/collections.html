@@ -22,7 +22,7 @@
                 <li><a href="visit.html">参观导览</a></li>
                 <li><a href="introduction.html">虚拟标本馆</a></li>
                 <li><a href="newsDetail.html">新闻资讯</a></li>
-                <li><a href="collections.html">馆藏标本</a></li>
+                <li class="nav-active"><a href="collections.html">馆藏标本</a></li>
                 <li><a href="volunteer.html">志愿团队</a></li>
                 <li><a href="donate.html">捐赠鸣谢</a></li>
                 <li><a href="contact.html">联系我们</a></li>
@@ -123,7 +123,10 @@
                         <div class="l-content">
                             标本馆有六个展区，即贝类展区、哺乳动物展区、鸟类展区、爬行动物展区、
                             海洋生物展区和植物展区。其中，五个动物类展区为核心展区，植物标本收藏
-                            区储藏大量腊叶标本，供教学和科研使用。
+                            区储藏大量腊叶标本，供教学和科研使用。标本馆有六个展区，即贝类展区、
+                            哺乳动物展区、鸟类展区、爬行动物展区、
+                            海洋生物展区和植物展区。其中，五个动物类展区为核心展区，植物标本收藏
+                            区储藏大量腊叶标本，供教学和科研使用
                         </div>
                     </div>
                     <div class="l-pic4">
@@ -269,8 +272,10 @@
         var scroHeight = $(document).scrollTop();  //滚动高度
         if (scroHeight > 56) {
             $(".page-nav").css('background','#5F2376')
+            $(".nav-active").css('border-bottom','2px solid #ffffff')
         } else {
             $(".page-nav").css('background','transparent')
+            $(".nav-active").css('border-bottom','2px solid #5F2376')
         }
     })
 </script>
