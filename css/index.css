@@ -237,7 +237,7 @@
     width: 457px;
     height: 513px;
     background: #232122;
-    margin: 158px 74px 149px 0;
+    margin: 158px 0px 149px 0;
     position: relative;
 }
 
@@ -248,10 +248,13 @@
 }
 
 .news-content {
-    width: 420px;
-    margin-top: 150px;
+    width: 480px;
+    margin-top: 50px;
 }
-
+.news-picblock{
+    position: absolute;
+    right:-578px;
+}
 .news-item {
     margin-top: 47px;
 }
