@@ -26,6 +26,10 @@
     padding-bottom: 30px;
     box-sizing: border-box;
 }
+.content{
+    line-height: 28px;
+    margin-top: 20px;
+}
 .intro-content h3{
     margin-top: 28px;
 }
@@ -164,9 +168,11 @@
 .intro-detail-content-title span{
     color:#313131;
     font-size: 14px;
+    line-height: 28px;
+    margin-top: 20px;
 }
 .intro-detail-content{
-    margin-top: 50px;
+    margin-top: 30px;
     width:100%;
     /*background: blue;*/
 }
@@ -214,4 +220,5 @@
     display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
     -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
     -webkit-line-clamp: 2; /** 显示的行数 **/
+    line-height: 28px;
 }

@@ -56,7 +56,7 @@
     margin-top: 25px;
     font-size: 14px;
     font-family: PingFang SC;
-    line-height: 24px;
+    line-height: 28px;
 }
 .detail-bg{
     width: 100%;
@@ -112,7 +112,7 @@
     margin-top: 25px;
     font-size: 14px;
     font-family: PingFang SC;
-    line-height: 24px;
+    line-height: 28px;
     color: #313131;
 }
 .right-top{
@@ -217,6 +217,7 @@
     font-size: 14px;
     font-family: PingFang SC;
     color: #222222;
+    line-height: 28px;
 }
 .l-pic5{
     margin-top: 20px;
