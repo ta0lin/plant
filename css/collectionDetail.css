@@ -1,6 +1,7 @@
 .collection-container {
     width: 1920px;
-    height: 1056px;
+    height: 100%;
+    min-height: 1059px;
 }
 
 .collection1-container {
@@ -10,12 +11,15 @@
 
 .index-header {
     position: relative;
+    height:100%;
+    min-height: 1059px;
 }
 
-.index-header img {
-    width: 100%;
+.index-header > img {
+    width: 1920px;
     height: 100%;
     display: block;
+    min-height: 1059px;
 }
 
 .index-header .getback {
@@ -43,7 +47,6 @@
     bottom: 18px;
     left: 103px;
 }
-
 .navitem ul li {
     float: left;
     width: auto;
@@ -70,9 +73,6 @@
     padding-bottom: 5px;
 }
 
-.pic-block {
-    margin-top: 18px;
-}
 
 .pic-block img {
     width: 165px;
@@ -81,59 +81,8 @@
     margin-right: 13px;
     cursor: pointer;
 }
-
-.point1 {
-    position: absolute;
-    width: 820px;
-    height: 160px;
-    left: 0;
-    top: 280px;
-    cursor: pointer;
-}
-
-.point2 {
-    position: absolute;
-    width: 500px;
-    height: 170px;
-    left: 820px;
-    top: 320px;
-    cursor: pointer;
-}
-
-.point3 {
-    position: absolute;
-    width: 870px;
-    height: 153px;
-    left: 83px;
-    bottom: 190px;
-    cursor: pointer;
-}
-.point4{
-    position: absolute;
-    width: 360px;
-    height: 1000px;
-    left: 684px;
-    top: 0;
-    cursor: pointer;
-}
-.point5{
-    position: absolute;
-    width: 1768px;
-    height: 388px;
-    left: 100px;
-    top: 436px;
-    cursor: pointer;
-}
-.point301{
-    position: absolute;
-    width: 473px;
-    height: 491px;
-    left: 724px;
-    top: 253px;
-    cursor: pointer;
-}
 .showdetail {
-    width: 642px;
+    width: 450px;
     height: auto;
     background: #4E1060;
     opacity: 0.74;
@@ -169,33 +118,55 @@
     line-height: 28px;
     color: #FFFFFF;
 }
-
-.showdetail3 {
-    left: 383px;
-    bottom: 210px;
+.getmore{
+    text-align: right;
+    width: 100%;
+}
+.getmore a{
+    color:#ffffff;
+}
+.point {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/introduction/point.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: shan 2s ease infinite;
+    cursor: pointer;
+    z-index: 9999;
+}
+@-webkit-keyframes shan {
+    0% {
+        box-shadow: 0 0 20px 2px rgba(255,255,255,.8);
+    }
+    50% {
+        box-shadow: 0 0 20px 2px rgba(255,255,255,.2);
+    }
+    100% {
+        box-shadow: 0 0 20px 2px rgba(255,255,255,.8);
+    }
+}
+@-moz-keyframes shan {
+    0% {
+        box-shadow: 0 0 20px 2px rgba(255,255,255,.8);
+    }
+    50% {
+        box-shadow: 0 0 20px 2px rgba(255,255,255,.2);
+    }
+    100% {
+        box-shadow: 0 0 20px 2px rgba(255,255,255,.8);
+    }
 }
 
-.showdetail1 {
-    left: 100px;
-    top: 200px;
-}
-
-.showdetail2 {
-    left: 900px;
-    top: 260px;
-}
-.showdetail4{
-    left: 800px;
-    top: 240px;
-}
-.showdetail5{
-    left: 800px;
-    top: 140px;
-}
-.showdetail301{
-    left: 900px;
-    top: 260px;
-}
-.pic-item , .big-pic-item{
-    display: none;
+@keyframes shan {
+    0% {
+        box-shadow: 0 0 20px 2px rgba(255,255,255,.8);
+    }
+    50% {
+        box-shadow: 0 0 20px 2px rgba(255,255,255,.2);
+    }
+    100% {
+        box-shadow: 0 0 20px 2px rgba(255,255,255,.8);
+    }
 }

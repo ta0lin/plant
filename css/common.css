@@ -141,27 +141,11 @@
 }
 /*  小于1021的屏幕  */
 @media screen and (max-width: 1020px){
-    /*.nav{*/
-    /*    width: 980px;*/
-    /*}*/
-    /*.web-center{*/
-    /*    width: 980px;*/
-    /*}*/
-    /*.intro-l{*/
-    /*    width:337px;*/
-    /*    height:698px;*/
-    /*}*/
-    /*.intro-r {*/
-    /*    width: 680px;*/
-    /*    height: 476px;*/
-    /*}*/
-    /*.intro-pic1 , .intro-pic2{*/
-    /*    display: none;*/
-    /*}*/
+    /*联系我们*/
 }
 
 /*  pc 端 1024 - 1280  */
-@media screen and (min-width: 1021px) and (max-width: 1600px){
+@media screen and (min-width: 1200px) and (max-width: 1600px){
     .bg-center {
         margin: 0 330px 0 250px;
     }
@@ -188,11 +172,11 @@
     .intro-pic1 , .intro-pic2 , .right-eagle , .vt-pic , .news-pic , .bird-img ,.leo-img{
         display: none;
     }
-    .intro-detail-content-img{
+    .intro-detail-content-img , .item-block{
         width: 1068px;
     }
     .img-item{
-        width:331px;
+        width:338px;
         height:480px;
     }
     .content-detail1{

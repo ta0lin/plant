@@ -171,6 +171,11 @@
     line-height: 28px;
     margin-top: 20px;
 }
+.intro-detail-content-title > img{
+    width: 100%;
+    margin:30px 0;
+    display: block;
+}
 .intro-detail-content{
     margin-top: 30px;
     width:100%;
@@ -184,11 +189,11 @@
     overflow: hidden;
     height: 0;
 }
-.img-item{
+.item-block > .img-item{
     float: left;
     margin-right:27px;
 }
-.img-item:nth-child(3n+3){
+.item-block > .img-item:nth-child(3n+3){
     margin-right:0px!important;
 }
 .img-item .item-pic img{
@@ -221,4 +226,29 @@
     -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
     -webkit-line-clamp: 2; /** 显示的行数 **/
     line-height: 28px;
+}
+.block-title{
+    margin:20px 0;
+}
+.block-title img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-top: -15px;
+}
+.block-title span{
+    font-size:20px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.block-content{
+    margin-bottom: 30px;
+}
+.item-block::after{
+    display: block;
+    content: '';
+    height:0;
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
 }

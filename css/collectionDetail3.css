@@ -1,0 +1,755 @@
+.pic-item{
+    display: none;
+}
+.point1{
+    right: 900px;
+    bottom: 730px;
+}
+.showdetail1{
+    right: 1000px;
+    bottom: 730px;
+}
+.point2{
+    right: 200px;
+    bottom: 530px;
+}
+.showdetail2{
+    right: 300px;
+    bottom: 530px;
+}
+.point3{
+    right: 200px;
+    bottom: 530px;
+}
+.showdetail3{
+    right: 300px;
+    bottom: 530px;
+}
+.point4{
+    left: 700px;
+    top: 550px;
+}
+.showdetail4{
+    left: 800px;
+    top: 550px;
+}
+.point5{
+    left: 800px;
+    bottom: 330px;
+}
+.showdetail5{
+    left: 900px;
+    bottom: 330px;
+}
+.point6{
+    left: 1000px;
+    bottom: 500px;
+}
+.showdetail6{
+    left: 1100px;
+    bottom: 500px;
+}
+.point7{
+    left: 800px;
+    bottom: 500px;
+}
+.showdetail7{
+    left: 900px;
+    bottom: 500px;
+}
+.point8{
+    right: 200px;
+    bottom: 530px;
+}
+.showdetail8{
+    right: 300px;
+    bottom: 530px;
+}
+.point9{
+    right: 200px;
+    bottom: 530px;
+}
+.showdetail9{
+    right: 300px;
+    bottom: 530px;
+}
+.point10{
+    left: 700px;
+    top: 450px;
+}
+.showdetail10{
+    left: 800px;
+    top: 450px;
+}
+.point11{
+    left: 30px;
+    top: 280px;
+}
+.showdetail11{
+    left: 130px;
+    top: 280px;
+}
+.point12{
+    right: 250px;
+    bottom: 570px;
+}
+.showdetail12{
+    right: 350px;
+    bottom: 570px;
+}
+.point13{
+    left: 750px;
+    top: 600px;
+}
+.showdetail13{
+    left: 850px;
+    top: 600px;
+}
+.point14{
+    left: 500px;
+    bottom: 450px;
+}
+.showdetail14{
+    left: 600px;
+    bottom: 450px;
+}
+.point15{
+    left: 830px;
+    top: 530px;
+}
+.showdetail15{
+    left: 930px;
+    top: 530px;
+}
+.point17{
+    left: 400px;
+    top: 530px;
+}
+.showdetail17{
+    left: 500px;
+    top: 530px;
+}
+.point16{
+    left: 817px;
+    top: 530px;
+}
+.showdetail16{
+    left: 917px;
+    top: 530px;
+}
+.point18{
+    left: 130px;
+    top: 400px;
+}
+.showdetail18{
+    left: 230px;
+    top: 400px;
+}
+.point19{
+    left: 222px;
+    top: 560px;
+}
+.showdetail19{
+    left: 322px;
+    top: 560px;
+}
+.point20{
+    left: 500px;
+    top: 530px;
+}
+.showdetail20{
+    right: 300px;
+    bottom: 530px;
+}
+.point21{
+    left: 320px;
+    top: 500px;
+}
+.showdetail21{
+    left: 420px;
+    top: 500px;
+}
+.point22{
+    right: 250px;
+    top: 350px;
+}
+.showdetail22{
+    right: 350px;
+    top: 350px;
+}
+
+
+.point23{
+    right: 700px;
+    bottom: 450px;
+}
+.showdetail23{
+    right: 800px;
+    bottom: 450px;
+}
+.point24{
+    right: 940px;
+    bottom: 460px;
+}
+.showdetail24{
+    right: 1040px;
+    bottom: 460px;
+}
+.point25{
+    right: 1040px;
+    bottom: 400px;
+}
+.showdetail25{
+    right: 1040px;
+    bottom: 400px;
+}
+.point26{
+    left: 720px;
+    bottom: 400px;
+}
+.showdetail26{
+    left: 820px;
+    bottom: 400px;
+}
+.point27{
+    right: 100px;
+    top: 530px;
+}
+.showdetail27{
+    right: 200px;
+    top: 530px;
+}
+.point28{
+    right: 100px;
+    top: 530px;
+}
+.showdetail28{
+    right: 200px;
+    top: 530px;
+}
+.point29{
+    left: 80px;
+    top: 610px;
+}
+.showdetail29{
+    left: 180px;
+    top: 610px;
+}
+.point30{
+    left: 0px;
+    bottom: 450px;
+}
+.showdetail30{
+    left: 100px;
+    bottom: 450px;
+}
+.point31{
+    left: 250px;
+    top: 650px;
+}
+.showdetail31{
+    left: 350px;
+    top: 650px;
+}
+.point32{
+    right: 700px;
+    top: 560px;
+}
+.showdetail32{
+    right: 800px;
+    top: 560px;
+}
+
+.point33{
+    left: 750px;
+    bottom: 360px;
+}
+.showdetail33{
+    left: 850px;
+    bottom: 360px;
+}
+.point34{
+    right: 900px;
+    top: 660px;
+}
+.showdetail34{
+    right: 1000px;
+    top: 660px;
+}
+.point35{
+    right: 600px;
+    bottom: 430px;
+}
+.showdetail35{
+    right: 700px;
+    bottom: 430px;
+}
+.point36{
+    left: 200px;
+    top: 760px;
+}
+.showdetail36{
+    left: 300px;
+    top: 760px;
+}
+.point37{
+    right: 1000px;
+    top: 660px;
+}
+.showdetail37{
+    right: 1100px;
+    top: 660px;
+}
+.point38{
+    right: 700px;
+    top: 680px;
+}
+.showdetail38{
+    right: 800px;
+    top: 680px;
+}
+.point39{
+    right: 700px;
+    bottom: 360px;
+}
+.showdetail39{
+    right: 800px;
+    bottom: 360px;
+}
+.point40{
+    left: 850px;
+    bottom: 460px;
+}
+.showdetail40{
+    left: 950px;
+    bottom: 460px;
+}
+.point41{
+    right: 1000px;
+    top: 800px;
+}
+.showdetail41{
+    right: 1100px;
+    top: 800px;
+}
+.point42{
+    left: 580px;
+    top: 545px;
+}
+.showdetail42{
+    left: 680px;
+    top: 545px;
+}
+.point43{
+    left: 900px;
+    bottom: 320px;
+}
+.showdetail43{
+    left: 1000px;
+    bottom: 320px;
+}
+.point44{
+    right: 850px;
+    bottom: 460px;
+}
+.showdetail44{
+    right: 950px;
+    bottom: 460px;
+}
+.point45{
+    right: 724px;
+    bottom: 300px;
+}
+.showdetail45{
+    right: 824px;
+    bottom: 300px;
+}
+.point46{
+    right: 759px;
+    bottom: 273px;
+}
+.showdetail46{
+    right: 859px;
+    bottom: 273px;
+}
+.point47{
+    right: 585px;
+    bottom: 300px;
+}
+.showdetail47{
+    right: 685px;
+    bottom: 300px;
+}
+.point48{
+    left: 46px;
+    top: 508px;
+}
+.showdetail48{
+    left: 46px;
+    top: 508px;
+}
+.point49{
+    right: 400px;
+    top: 514px;
+}
+.showdetail49{
+    right: 500px;
+    top: 514px;
+}
+.point50{
+    right: 400px;
+    top: 514px;
+}
+.showdetail50{
+    right: 500px;
+    top: 514px;
+}
+.point51{
+    right: 700px;
+    top: 560px;
+}
+.showdetail51{
+    right: 800px;
+    top: 560px;
+}
+.point52{
+    right: 250px;
+    top: 530px;
+}
+.showdetail52{
+    right: 350px;
+    top: 530px;
+}
+.point53{
+    right: 520px;
+    top: 730px;
+}
+.showdetail53{
+    right: 620px;
+    top: 730px;
+}
+.point54{
+    right: 500px;
+    top: 787px;
+}
+.showdetail54{
+    right: 600px;
+    top: 787px;
+}
+.point55{
+    right: 700px;
+    top: 560px;
+}
+.showdetail55{
+    right: 800px;
+    top: 560px;
+}
+.point56{
+    right: 700px;
+    top: 560px;
+}
+.showdetail56{
+    right: 800px;
+    top: 560px;
+}
+.point57{
+    right: 100px;
+    top: 410px;
+}
+.showdetail57{
+    right: 200px;
+    top: 410px;
+}
+.point58{
+    right: 700px;
+    top: 560px;
+}
+.showdetail58{
+    right: 800px;
+    top: 560px;
+}
+
+
+.point59{
+    left: 646px;
+    bottom: 360px;
+}
+.showdetail59 {
+    left: 746px;
+    bottom: 360px;
+}
+.point60{
+    right: 200px;
+    top: 744px;
+}
+.showdetail60{
+    right: 300px;
+    top: 744px;
+}
+.point61{
+    left: 550px;
+    top: 744px;
+}
+.showdetail61{
+    left: 650px;
+    top: 744px;
+}
+.point62{
+    left: 350px;
+    top: 760px;
+}
+.showdetail62{
+    left: 450px;
+    top: 760px;
+}
+.point63{
+    right: 480px;
+    bottom: 300px;
+}
+.showdetail63{
+    right: 580px;
+    bottom: 300px;
+}
+.point64{
+    right: 500px;
+    bottom: 187px;
+}
+.showdetail64{
+    right: 600px;
+    bottom: 187px;
+}
+.point65{
+    right: 652px;
+    bottom: 190px;
+}
+.showdetail65{
+    right: 752px;
+    bottom: 190px;
+}
+.point66{
+    left: 970px;
+    bottom: 330px;
+}
+.showdetail66{
+    left: 1070px;
+    bottom: 330px;
+}
+.point67{
+    left: 578px;
+    bottom: 422px;
+}
+.showdetail67{
+    left: 678px;
+    bottom: 422px;
+}
+.point68{
+    left: 719px;
+    bottom: 404px;
+}
+.showdetail68{
+    left: 819px;
+    bottom: 404px;
+}
+.point69{
+    left: 845px;
+    bottom: 404px;
+}
+.showdetail69{
+    left: 945px;
+    bottom: 404px;
+}
+.point70{
+    left: 930px;
+    bottom: 460px;
+}
+.showdetail70{
+    left: 1030px;
+    bottom: 460px;
+}
+.point71{
+    right: 700px;
+    top: 560px;
+}
+.showdetail71{
+    right: 800px;
+    top: 560px;
+}
+.point72{
+    right: 740px;
+    top: 700px;
+}
+.showdetail72{
+    right: 840px;
+    top: 700px;
+}
+.point73{
+    right: 700px;
+    top: 560px;
+}
+.showdetail73{
+    right: 800px;
+    top: 560px;
+}
+
+
+.point74{
+    right: 1100px;
+    top: 607px;
+}
+.showdetail74{
+    right: 1200px;
+    top: 607px;
+}
+.point75{
+    right: 900px;
+    top: 560px;
+}
+.showdetail75{
+    right: 1000px;
+    top: 560px;
+}
+.point76{
+    right: 700px;
+    top: 560px;
+}
+.showdetail76{
+    left: 700px;
+    top: 460px;
+}
+.point77{
+    left: 768px;
+    top: 429px;
+}
+.showdetail77{
+    left: 868px;
+    top: 429px;
+}
+.point78{
+    right: 615px;
+    top: 571px;
+}
+.showdetail78{
+    right: 715px;
+    top: 571px;
+}
+.point79{
+    right: 700px;
+    top: 560px;
+}
+.showdetail79{
+    right: 800px;
+    top: 560px;
+}
+.point80{
+    right: 795px;
+    bottom: 350px;
+}
+.showdetail80{
+    right: 895px;
+    bottom: 350px;
+}
+.point81{
+    left: 490px;
+    top: 800px;
+}
+.showdetail81{
+    left: 590px;
+    top: 800px;
+}
+.point82{
+    left: 366px;
+    top: 760px;
+}
+.showdetail82{
+    left: 466px;
+    top: 760px;
+}
+.point83{
+    left: 686px;
+    top: 640px;
+}
+.showdetail83{
+    left: 786px;
+    top: 640px;
+}
+.point84{
+    right: 635px;
+    top: 627px;
+}
+.showdetail84{
+    right: 735px;
+    top: 627px;
+}
+.point85{
+    right: 574px;
+    top: 560px;
+}
+.showdetail85{
+    right: 674px;
+    top: 560px;
+}
+.point86{
+    right: 537px;
+    top: 660px;
+}
+.showdetail86{
+    right: 637px;
+    top: 660px;
+}
+.point87{
+    right: 500px;
+    top: 460px;
+}
+.showdetail87{
+    right: 600px;
+    top: 460px;
+}
+
+.point88{
+    right: 340px;
+    top: 481px;
+}
+.showdetail88{
+    right: 440px;
+    top: 481px;
+}
+.point89{
+    right: 450px;
+    bottom: 430px;
+}
+.showdetail89{
+    right: 550px;
+    bottom: 430px;
+}
+.point90{
+    right: 700px;
+    top: 560px;
+}
+.showdetail90{
+    right: 800px;
+    top: 560px;
+}
+.point91{
+    right: 300px;
+    top: 760px;
+}
+.showdetail91{
+    right: 400px;
+    top: 760px;
+}
+.point92{
+    right: 270px;
+    top: 546px;
+}
+.showdetail92{
+    right: 370px;
+    top: 546px;
+}
+.point93{
+    right: 700px;
+    top: 560px;
+}
+.showdetail93{
+    right: 800px;
+    top: 560px;
+}

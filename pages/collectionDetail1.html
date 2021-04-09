@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清华大学标本馆</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link type="favicon" rel="shortcut icon" href="../favicon.png"/>
+</head>
+<script>
+    document.write('<link rel="stylesheet" href="../css/common.css?' + new Date().getTime() + '">')
+    document.write('<link rel="stylesheet" href="../css/collectionDetail.css?' + new Date().getTime() + '">')
+    document.write('<link rel="stylesheet" href="../css/collectionDetail1.css?' + new Date().getTime() + '">')
+</script>
+<body onclick="hidedetail()">
+<div class="collection-container">
+    <div class="index-header">
+        <div class="getback">
+            <a href="collections.html"><img src="../images/collectionDetail/getback.png" alt="">返回</a>
+        </div>
+        <div class="big-pic-item big-pic-item1">
+            <div class="point point1" onclick="showdetail(1,'布氏鲸 Balaenoptera brydei')"></div>
+            <div class="showdetail showdetail1">
+            </div>
+        </div>
+<!--        <div class="big-pic-item big-pic-item1">-->
+<!--            <div class="point point2" onclick="showdetail(2,'长江江豚Neophocaena asiaeorientalis')"></div>-->
+<!--            <div class="showdetail showdetail2">-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="big-pic-item big-pic-item1">
+            <div class="point point3" onclick="showdetail(3,'中华鲎 Tachypleus tridentatus')"></div>
+            <div class="showdetail showdetail3">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item1">
+            <div class="point point4" onclick="showdetail(4,'玳瑁 Eretmochelys imbricata')"></div>
+            <div class="showdetail showdetail4">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item1">
+            <div class="point point5" onclick="showdetail(5,'绿海龟 Chelonia mydas')"></div>
+            <div class="showdetail showdetail5">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item1">
+            <div class="point point6" onclick="showdetail(6,'白鲟 Psephurus gladius')"></div>
+            <div class="showdetail showdetail6">
+            </div>
+        </div>
+<!--        <div class="big-pic-item big-pic-item1">-->
+<!--            <div class="point point7" onclick="showdetail(7,'中华白海豚 Sousa chinensis')"></div>-->
+<!--            <div class="showdetail showdetail7">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="big-pic-item big-pic-item1">-->
+<!--            <div class="point point8" onclick="showdetail(8,'翻车鲀 Mola mola*')"></div>-->
+<!--            <div class="showdetail showdetail8">-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="big-pic-item big-pic-item1">
+            <div class="point point9" onclick="showdetail(9,'勘察加拟石蟹Paralithodes camtschaticus*')"></div>
+            <div class="showdetail showdetail9">
+            </div>
+        </div>
+<!--        <div class="big-pic-item big-pic-item1">-->
+<!--            <div class="point point10" onclick="showdetail(10,'扬子鳄 Alligator sinensis')"></div>-->
+<!--            <div class="showdetail showdetail10">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="big-pic-item big-pic-item1">-->
+<!--            <div class="point point11" onclick="showdetail(11,'北海狗 Callorhinus ursinus')"></div>-->
+<!--            <div class="showdetail showdetail11">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="big-pic-item big-pic-item1">-->
+<!--            <div class="point point12" onclick="showdetail(12,'斑海豹 Phoca largha')"></div>-->
+<!--            <div class="showdetail showdetail12">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="big-pic-item big-pic-item1">-->
+<!--            <div class="point point13" onclick="showdetail(13,'洪堡企鹅 Spheniscus humboldti*')"></div>-->
+<!--            <div class="showdetail showdetail13">-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="big-pic-item big-pic-item1">
+            <div class="point point14" onclick="showdetail(14,'铰口鲨 Ginglymostoma cirratum*')"></div>
+            <div class="showdetail showdetail14">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item1">
+            <div class="point point15" onclick="showdetail(15,'东方旗鱼 Istiophorus platypterus')"></div>
+            <div class="showdetail showdetail15">
+            </div>
+        </div>
+<!--        <div class="big-pic-item big-pic-item1">-->
+<!--            <div class="point point16" onclick="showdetail(16,'圆犁头鳐 Rhina ancylostoma')"></div>-->
+<!--            <div class="showdetail showdetail16">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="big-pic-item big-pic-item1">-->
+<!--            <div class="point point17" onclick="showdetail(17,'爪哇牛鼻鲼 Rhinoptera javanica')"></div>-->
+<!--            <div class="showdetail showdetail17">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="big-pic-item big-pic-item1">-->
+<!--            <div class="point point18" onclick="showdetail(18,'六腮魟 Hexatrygon longirostrum')"></div>-->
+<!--            <div class="showdetail showdetail18">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="big-pic-item big-pic-item1">-->
+<!--            <div class="point point19" onclick="showdetail(19,'糙齿海豚 Steno bredanensis')"></div>-->
+<!--            <div class="showdetail showdetail19">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="big-pic-item big-pic-item1">-->
+<!--            <div class="point point20" onclick="showdetail(20,'宽吻海豚 Tursiops truncatus')"></div>-->
+<!--            <div class="showdetail showdetail20">-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="big-pic-item big-pic-item2">
+            <div class="point point21" onclick="showdetail(21,'鲸鲨 Rhincodon typus')"></div>
+            <div class="showdetail showdetail21">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item2">
+            <div class="point point22" onclick="showdetail(22,'白鹈鹕Pelecanus onocrotalus')"></div>
+            <div class="showdetail showdetail22">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item2">
+            <div class="point point23" onclick="showdetail(23,'大红鹳 Phoenicopterus roseus')"></div>
+            <div class="showdetail showdetail23">
+            </div>
+        </div>
+        <img src="../images/collectionDetail/collection1.png" class="big-pic-target">
+        <div class="collection-nav">
+            <div class="navitem">
+                <ul class="nav nav1">
+                    <li class="li1 active-navitem" data-num="1">布氏鲸展区</li>
+                    <li class="li3" data-num="2">鲸鲨展区</li>
+                </ul>
+            </div>
+            <div class="pic-block">
+                <div class="pic-item pic-item1">
+                    <img src="../images/collectionDetail/s101.jpg" alt=""
+                         data-src="../images/collectionDetail/s101.jpg" data-nums="1"
+                    >
+                </div>
+                <div class="pic-item pic-item2">
+                    <img src="../images/collectionDetail/s102.jpg" alt=""
+                         data-src="../images/collectionDetail/s102.jpg" data-nums="2">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/mutual.js"></script>
+<script>
+    var s = GetQueryString("show");
+    $(".nav"+s).show();
+    $(".pic-item1").show();
+    $(".big-pic-target").attr('src', $(".pic-item1 img").eq(0)[0].dataset.src);
+    $(".big-pic-item1").show();
+    $(".navitem ul li").eq(0).addClass('active-navitem').siblings().removeClass("active-navitem");
+    function showdetail(data,p) {
+        sessionStorage.setItem('data',data)
+        var params = {
+            url: '/libraryMainSpecimen/getSpecimentDetailByName?name='+p+'',
+            type: 'get',
+            contentType: 'application/json;charset=utf-8',
+            callback: points,
+            async: true
+        }
+        ajax(params);
+    }
+    function hidedetail() {
+        $(".showdetail").hide()
+    }
+
+    $(".navitem ul").on('click', function (e) {
+        if ($(e.target)[0].localName == 'li') {
+            $(".pic-item").hide();
+            $(".pic-item" + e.target.dataset.num).show();
+            $(".big-pic-item").hide();
+            $(".big-pic-item" + e.target.dataset.num + "").show();
+            $(e.target).addClass('active-navitem').siblings().removeClass("active-navitem");
+            $(".big-pic-target").attr('src', $(".pic-item" + e.target.dataset.num + " img").eq(0)[0].dataset.src);
+        }
+    })
+    $(".pic-item img").on('click', function (e) {
+        console.log(e.target.dataset.src);
+        $(".big-pic-target").attr('src', e.target.dataset.src);
+        $(".big-pic-item").hide();
+        $(".big-pic-item" + e.target.dataset.nums).show();
+    })
+
+</script>
+</html>

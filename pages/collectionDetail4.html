@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清华大学标本馆</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link type="favicon" rel="shortcut icon" href="../favicon.png"/>
+</head>
+<script>
+    document.write('<link rel="stylesheet" href="../css/common.css?' + new Date().getTime() + '">')
+    document.write('<link rel="stylesheet" href="../css/collectionDetail.css?' + new Date().getTime() + '">')
+    document.write('<link rel="stylesheet" href="../css/collectionDetail4.css?' + new Date().getTime() + '">')
+</script>
+<body onclick="hidedetail()">
+<div class="collection-container">
+    <div class="index-header">
+        <div class="getback">
+            <a href="collections.html"><img src="../images/collectionDetail/getback.png" alt="">返回</a>
+        </div>
+        <div class="big-pic-item big-pic-item1">
+            <div class="point point1" onclick="showdetail(1,'扬子鳄 Alligator sinensis')"></div>
+            <div class="showdetail showdetail1">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item2">
+            <div class="point point2" onclick="showdetail(2,'湾鳄 Crocodylus porosus')"></div>
+            <div class="showdetail showdetail2">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item3">
+            <div class="point point3" onclick="showdetail(3,'大鳄龟 Macrochelys temminckii')"></div>
+            <div class="showdetail showdetail3">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item4">
+            <div class="point point4" onclick="showdetail(4,'缅甸陆龟 Testudo elongata')"></div>
+            <div class="showdetail showdetail4">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item5">
+            <div class="point point5" onclick="showdetail(5,'眼镜王蛇 Ophiophagus hannah')"></div>
+            <div class="showdetail showdetail5">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item6">
+            <div class="point point6" onclick="showdetail(6,'圆鼻巨蜥')"></div>
+            <div class="showdetail showdetail6">
+            </div>
+        </div>
+        <img src="../images/collectionDetail/3.jpg" class="big-pic-target">
+    </div>
+</div>
+</body>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/mutual.js"></script>
+<script>
+    function showdetail(data,p) {
+        sessionStorage.setItem('data',data)
+        var params = {
+            url: '/libraryMainSpecimen/getSpecimentDetailByName?name='+p+'',
+            type: 'get',
+            contentType: 'application/json;charset=utf-8',
+            callback: points,
+            async: true
+        }
+        ajax(params);
+    }
+
+    function hidedetail() {
+        $(".showdetail").hide()
+    }
+</script>
+</html>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>清华大学标本馆</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link rel="stylesheet" href="../css/reset.css">
     <link type="favicon" rel="shortcut icon" href="../favicon.png"/>
 </head>
@@ -43,8 +44,8 @@
         <div class="newsdetail-content">
         </div>
         <div class="web-pagination">
-            <div class="intro-left-button"><</div>
-            <div class="intro-right-button">></div>
+            <div class="intro-left-button" onclick="prev()"><</div>
+            <div class="intro-right-button" onclick="next()">></div>
         </div>
     </div>
 </div>
@@ -64,11 +65,13 @@
 <script src="../js/common.js"></script>
 <script src="../js/mutual.js"></script>
 <script>
+    var s=10,
+    current=1;
     var params = {
         url:'/news/listNewsMain',
         data:{
-            'current':1,
-            'size':10
+            'current':current,
+            'size':s
         },
         type:'get',
         contentType:'application/json;charset=utf-8',
@@ -76,6 +79,24 @@
         async:true
     }
     ajax(params);
+    function prev(){
+        if (current==1){
+            return
+        }
+        params.data.current-=1;
+        current-=1;
+        $(".newsdetail-content").text("");
+        ajax(params);
+    }
+    function next(){
+        if (current==Math.round(sessionStorage.getItem('ntotal')/s)){
+            return
+        }
+        params.data.current+=1;
+        current+=1;
+        $(".newsdetail-content").text("");
+        ajax(params);
+    }
     header(711, 1920);
     $(window).resize(function () {
         header(711, 1920);

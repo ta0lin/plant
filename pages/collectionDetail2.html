@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清华大学标本馆</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link type="favicon" rel="shortcut icon" href="../favicon.png"/>
+</head>
+<script>
+    document.write('<link rel="stylesheet" href="../css/common.css?' + new Date().getTime() + '">')
+    document.write('<link rel="stylesheet" href="../css/collectionDetail.css?' + new Date().getTime() + '">')
+    document.write('<link rel="stylesheet" href="../css/collectionDetail2.css?' + new Date().getTime() + '">')
+</script>
+<body onclick="hidedetail()">
+<div class="collection-container">
+    <div class="index-header">
+        <div class="getback">
+            <a href="collections.html"><img src="../images/collectionDetail/getback.png" alt="">返回</a>
+        </div>
+        <div class="big-pic-item big-pic-item1">
+            <div class="point point1" onclick="showdetail(1,'野猪 Sus scrofa')"></div>
+            <div class="showdetail showdetail1">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item1">
+            <div class="point point2" onclick="showdetail(2,'非洲狮 Panthera leo*')"></div>
+            <div class="showdetail showdetail2">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item1">
+            <div class="point point3" onclick="showdetail(2,'非洲狮 Panthera leo*')"></div>
+            <div class="showdetail showdetail3">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item1">
+            <div class="point point4" onclick="showdetail(2,'非洲狮 Panthera leo*')"></div>
+            <div class="showdetail showdetail4">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item2">
+            <div class="point point5" onclick="showdetail(5,'白长角羚 Oryx dammah*')"></div>
+            <div class="showdetail showdetail5">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item2">
+            <div class="point point6" onclick="showdetail(6,'牦牛 Bos grunniens')"></div>
+            <div class="showdetail showdetail6">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item2">
+            <div class="point point7" onclick="showdetail(7,'藏羚 Pantholops hodgsoni')"></div>
+            <div class="showdetail showdetail7">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item2">
+            <div class="point point8" onclick="showdetail(8,'剑羚 Oryx beisa*')"></div>
+            <div class="showdetail showdetail8">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item2">
+            <div class="point point9" onclick="showdetail(9,'黑尾牛羚 Connochaetes taurinus*')"></div>
+            <div class="showdetail showdetail9">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item2">
+            <div class="point point10" onclick="showdetail(10,'红颈袋鼠 Macropus rufogriseus*')"></div>
+            <div class="showdetail showdetail10">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item2">
+            <div class="point point11" onclick="showdetail(11,'（塔斯马尼亚）袋熊 Vombatus ursinus*')"></div>
+            <div class="showdetail showdetail11">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item3">
+            <div class="point point12" onclick="showdetail(12,'白颊长臂猿 Nomascus leucogenys')"></div>
+            <div class="showdetail showdetail12">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item3">
+            <div class="point point13" onclick="showdetail(13,'黑猩猩 Pan troglodytes*')"></div>
+            <div class="showdetail showdetail13">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item3">
+            <div class="point point14" onclick="showdetail(14,'环尾狐猴Lemur catta*')"></div>
+            <div class="showdetail showdetail14">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item3">
+            <div class="point point15" onclick="showdetail(15,'蜂猴 Nycticebus coucang')"></div>
+            <div class="showdetail showdetail15">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item3">
+            <div class="point point16" onclick="showdetail(16,'熊猴	Macaca assamensis')"></div>
+            <div class="showdetail showdetail16">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item3">
+            <div class="point point17" onclick="showdetail(17,'猕猴 Macaca mulatta')"></div>
+            <div class="showdetail showdetail17">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item3">
+            <div class="point point18" onclick="showdetail(18,'复齿鼯鼠 Trogopterus xanthipes')"></div>
+            <div class="showdetail showdetail18">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item3">
+            <div class="point point50" onclick="showdetail(50,'赤腹松鼠 Callosciurus flavimanus')"></div>
+            <div class="showdetail showdetail50">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item4">
+            <div class="point point19" onclick="showdetail(19,'梅花鹿 Cervus nippon')"></div>
+            <div class="showdetail showdetail19">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item4">
+            <div class="point point20" onclick="showdetail(20,'马鹿 Cervus canadensis')"></div>
+            <div class="showdetail showdetail20">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item5">
+            <div class="point point21" onclick="showdetail(21,'猞猁 Lynx lynx')"></div>
+            <div class="showdetail showdetail21">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item5">
+            <div class="point point22" onclick="showdetail(22,'东北虎 Panthera tigris altaica')"></div>
+            <div class="showdetail showdetail22">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item5">
+            <div class="point point23" onclick="showdetail(23,'雪豹 Uncia uncia')"></div>
+            <div class="showdetail showdetail23">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item5">
+            <div class="point point24" onclick="showdetail(24,'金猫 Felis temminckii')"></div>
+            <div class="showdetail showdetail24">
+            </div>
+        </div>
+<!--        <div class="big-pic-item big-pic-item5">-->
+<!--            <div class="point point26" onclick="showdetail(21,'豹猫 Prionailurus bengalensis')"></div>-->
+<!--            <div class="showdetail showdetail26">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="big-pic-item big-pic-item5">-->
+<!--            <div class="point point27" onclick="showdetail(21,'獐 Hydropotes inermis')"></div>-->
+<!--            <div class="showdetail showdetail27">-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="big-pic-item big-pic-item5">
+            <div class="point point28" onclick="showdetail(28,'雉鸡 Phasianus colchicus')"></div>
+            <div class="showdetail showdetail28">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item5">
+            <div class="point point29" onclick="showdetail(29,'毛冠鹿 Elaphodus cephalophus')"></div>
+            <div class="showdetail showdetail29">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item6">
+            <div class="point point30" onclick="showdetail(30,'狼 Canis lupus')"></div>
+            <div class="showdetail showdetail30">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item6">
+            <div class="point point31" onclick="showdetail(31,'豺 Cuon alpinus')"></div>
+            <div class="showdetail showdetail31">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item6">
+            <div class="point point32" onclick="showdetail(32,'藏狐 Vulpes ferrilata')"></div>
+            <div class="showdetail showdetail32">
+            </div>
+        </div>
+<!--        <div class="big-pic-item big-pic-item6">-->
+<!--            <div class="point point33" onclick="showdetail(33,'北极狐 Alopex lagopus *')"></div>-->
+<!--            <div class="showdetail showdetail33">-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="big-pic-item big-pic-item6">
+            <div class="point point34" onclick="showdetail(34,'貉 Nyctereutes procyonoides')"></div>
+            <div class="showdetail showdetail34">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item6">
+            <div class="point point35" onclick="showdetail(35,'云南红犬 Canis lupus familiaris△')"></div>
+            <div class="showdetail showdetail35">
+            </div>
+        </div>
+<!--        <div class="big-pic-item big-pic-item6">-->
+<!--            <div class="point point36" onclick="showdetail(36,'黄鼬Mustela sibirica')"></div>-->
+<!--            <div class="showdetail showdetail36">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="big-pic-item big-pic-item6">-->
+<!--            <div class="point point37" onclick="showdetail(37,'黄喉貂 Martes flavigula')"></div>-->
+<!--            <div class="showdetail showdetail37">-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="big-pic-item big-pic-item6">
+            <div class="point point38" onclick="showdetail(38,'猪獾 Arctonyx collaris')"></div>
+            <div class="showdetail showdetail38">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item6">
+            <div class="point point39" onclick="showdetail(39,'狗獾 Meles meles')"></div>
+            <div class="showdetail showdetail39">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item6">
+            <div class="point point52" onclick="showdetail(52,'果子狸 Paguma larvata')"></div>
+            <div class="showdetail showdetail52">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item6">
+            <div class="point point53" onclick="showdetail(53,'大灵猫 Viverra zibetha')"></div>
+            <div class="showdetail showdetail53">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item6">
+            <div class="point point54" onclick="showdetail(54,'小灵猫 Viverricula indica')"></div>
+            <div class="showdetail showdetail54">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item6">
+            <div class="point point55" onclick="showdetail(55,'斑林狸 Prionodon pardicolor')"></div>
+            <div class="showdetail showdetail55">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item7">
+            <div class="point point40" onclick="showdetail(40,'大熊猫 Ailuropoda melanoleuca')"></div>
+            <div class="showdetail showdetail40">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item7">
+            <div class="point point41" onclick="showdetail(41,'棕熊 Ursus arctos')"></div>
+            <div class="showdetail showdetail41">
+            </div>
+        </div>
+<!--        <div class="big-pic-item big-pic-item7">-->
+<!--            <div class="point point42" onclick="showdetail(42,'黑熊 Ursus thibetanus')"></div>-->
+<!--            <div class="showdetail showdetail42">-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="big-pic-item big-pic-item7">
+            <div class="point point43" onclick="showdetail(43,'小熊猫 Ailurus fulgens')"></div>
+            <div class="showdetail showdetail43">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item7">
+            <div class="point point44" onclick="showdetail(44,'中华穿山甲 Manis pentadactyla')"></div>
+            <div class="showdetail showdetail44">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item7">
+            <div class="point point45" onclick="showdetail(45,'中华竹鼠 Rnizomys sinensis')"></div>
+            <div class="showdetail showdetail45">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item7">
+            <div class="point point46" onclick="showdetail(46,'刺猬 Erinaceus europaeus')"></div>
+            <div class="showdetail showdetail46">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item7">
+            <div class="point point47" onclick="showdetail(47,'豪猪 Hystrix hodgsoni')"></div>
+            <div class="showdetail showdetail47">
+            </div>
+        </div>
+        <div class="big-pic-item big-pic-item7">
+            <div class="point point48" onclick="showdetail(48,'海狸鼠 Myocastor coypus*')"></div>
+            <div class="showdetail showdetail48">
+            </div>
+        </div>
+        <img src="../images/collectionDetail/s201.JPG" class="big-pic-target">
+        <div class="collection-nav">
+            <div class="navitem">
+                <ul class="nav nav2">
+                    <li class="li1 active-navitem" data-num="1">非洲狮展区</li>
+                    <li class="li3" data-num="2">高原动物展区</li>
+                    <li class="li4" data-num="3">灵长目展区</li>
+                    <li class="li5" data-num="4">鹿科展区</li>
+                    <li class="li5" data-num="5">猫科动物展区</li>
+                    <li class="li5" data-num="6">犬科、鼬科、灵猫科展区</li>
+                    <li class="li5" data-num="7">熊科展区</li>
+                </ul>
+            </div>
+            <div class="pic-block">
+                <div class="pic-item pic-item1">
+                    <img src="../images/collectionDetail/s201.JPG" alt=""
+                         data-src="../images/collectionDetail/s201.JPG" data-nums="1"
+                    >
+                </div>
+                <div class="pic-item pic-item2">
+                    <img src="../images/collectionDetail/IMG_5458.JPG" alt=""
+                         data-src="../images/collectionDetail/IMG_5458.JPG" data-nums="3">
+                </div>
+                <div class="pic-item pic-item3">
+                    <img src="../images/collectionDetail/s203.JPG" alt=""
+                         data-src="../images/collectionDetail/s203.JPG" data-nums="3">
+                </div>
+                <div class="pic-item pic-item4">
+                    <img src="../images/collectionDetail/s204.JPG" alt=""
+                         data-src="../images/collectionDetail/s204.JPG" data-nums="4">
+                </div>
+                <div class="pic-item pic-item5">
+                    <img src="../images/collectionDetail/s205.jpg" alt=""
+                         data-src="../images/collectionDetail/s205.jpg" data-nums="5">
+                </div>
+                <div class="pic-item pic-item6">
+                    <img src="../images/collectionDetail/s206.JPG" alt=""
+                         data-src="../images/collectionDetail/s206.JPG" data-nums="6">
+                </div>
+                <div class="pic-item pic-item7">
+                    <img src="../images/collectionDetail/s207.JPG" alt=""
+                         data-src="../images/collectionDetail/s207.JPG" data-nums="7">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/mutual.js"></script>
+<script>
+    $(".pic-item1").show();
+    $(".big-pic-item").hide();
+    $(".big-pic-target").attr('src', $(".pic-item1 img").eq(0)[0].dataset.src);
+    $(".big-pic-item1").show();
+    $(".navitem ul li").eq(0).addClass('active-navitem').siblings().removeClass("active-navitem");
+    function showdetail(data,p) {
+        sessionStorage.setItem('data',data)
+        var params = {
+            url: '/libraryMainSpecimen/getSpecimentDetailByName?name='+p+'',
+            type: 'get',
+            contentType: 'application/json;charset=utf-8',
+            callback: points,
+            async: true
+        }
+        ajax(params);
+    }
+
+    function hidedetail() {
+        $(".showdetail").hide()
+    }
+
+    $(".navitem ul").on('click', function (e) {
+        if ($(e.target)[0].localName == 'li') {
+            $(".pic-item").hide();
+            $(".pic-item" + e.target.dataset.num).show();
+            $(".big-pic-item").hide();
+            $(".big-pic-item" + e.target.dataset.num + "").show();
+            $(e.target).addClass('active-navitem').siblings().removeClass("active-navitem");
+            $(".big-pic-target").attr('src', $(".pic-item" + e.target.dataset.num + " img").eq(0)[0].dataset.src);
+        }
+    })
+    $(".pic-item img").on('click', function (e) {
+        console.log(e.target.dataset.src);
+        $(".big-pic-target").attr('src', e.target.dataset.src);
+        $(".big-pic-item").hide();
+        $(".big-pic-item" + e.target.dataset.nums).show();
+    })
+
+</script>
+</html>
