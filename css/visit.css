@@ -2,6 +2,8 @@
     width:100%;
     height:auto;
     background: #ECECEC;
+    min-width: 1024px;
+
 }
 .index-header img{
     width:100%;

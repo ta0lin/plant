@@ -2,6 +2,7 @@
     width:100%;
     height:auto;
     background: #ECECEC;
+    min-width: 1024px;
 }
 .around-block{
     height:auto;

@@ -6,6 +6,8 @@
     background: #ececec;
     box-sizing: border-box;
     padding-bottom: 50px;
+    min-width: 1024px;
+
 }
 .volunteer-header{
     position: absolute;

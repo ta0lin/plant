@@ -2,6 +2,8 @@
     width:100%;
     height:auto;
     background: #ececec;
+    min-width: 1024px;
+
 }
 .contact-header img{
     width:100%;

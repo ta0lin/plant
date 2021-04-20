@@ -148,7 +148,7 @@
 }
 
 /*  pc 端 1024 - 1280  */
-@media screen and (min-width: 1200px) and (max-width: 1600px){
+@media screen and (min-width: 1200px) and (max-width: 1679px){
     .bg-center {
         margin: 0 330px 0 250px;
     }
@@ -395,7 +395,7 @@
 }
 
 /*	pc 端 1280 以上的屏幕	*/
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1680px){
     .bg-center {
         margin: 0 330px 0 393px;
     }

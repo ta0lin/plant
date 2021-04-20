@@ -4,6 +4,8 @@
     background: #ECECEC;
     padding-bottom: 50px;
     box-sizing: border-box;
+    min-width: 1024px;
+
 }
 .collections-header img{
     width:100%;

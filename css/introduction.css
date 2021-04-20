@@ -5,6 +5,8 @@
     margin-top: 56px;
     padding:18px 0;
     box-sizing: border-box;
+    min-width: 1024px;
+
 }
 .intro-center, .intro-detail{
     background: #fff;

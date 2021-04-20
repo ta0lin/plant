@@ -5,6 +5,8 @@
     background: #ECECEC;
     padding: 74px 0 50px;
     box-sizing: border-box;
+    min-width: 1024px;
+
 }
 .newitem-block{
     margin:0px auto;
