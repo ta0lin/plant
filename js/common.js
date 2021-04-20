@@ -16,4 +16,16 @@ function GetQueryString(name) {
     r = null;
     return context == null || context == "" || context == "undefined" ? "" : context;
 }
-
+function pcOrH5(){
+    //初始化js
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    var bIsIphone = sUserAgent.match(/iphone/i) == "iphone";
+    var bIsIpod = sUserAgent.match(/iphone/i) == "ipod";
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+    if (bIsIphone || bIsIpod || bIsAndroid || bIsWM || bIsIpad) {
+        window.location.href = "http://106.38.115.83:9827/plantMobile";
+    }
+}
+pcOrH5()

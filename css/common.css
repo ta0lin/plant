@@ -8,6 +8,9 @@
     z-index: 9999;
     min-width: 1200px;
 }
+.page-nav img{
+    width: 300px;
+}
 .nav {
     height: 65px;
     margin: 0 auto;

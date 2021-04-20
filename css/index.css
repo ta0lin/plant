@@ -55,7 +55,7 @@
 .intro-pic1 {
     position: absolute;
     left: -119px;
-    top: 354px;
+    top: 390px;
     z-index: 2;
 }
 
@@ -594,4 +594,6 @@
     margin-top: -92px;
 }
 
-.sample-ya
+.intro-nav{
+    width: 168px;
+}
