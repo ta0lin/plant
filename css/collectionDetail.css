@@ -44,8 +44,12 @@
 
 .index-header .collection-nav {
     position: absolute;
-    bottom: 18px;
-    left: 103px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding:20px 117px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(128, 79, 149, 0.8) 0%, rgba(128, 79, 149, 0.66) 46%, rgba(128, 79, 149, 0) 100%);
 }
 .navitem ul li {
     float: left;
@@ -80,6 +84,7 @@
     display: inline-block;
     margin-right: 13px;
     cursor: pointer;
+    margin-top: 20px;
 }
 .showdetail {
     width: 450px;
